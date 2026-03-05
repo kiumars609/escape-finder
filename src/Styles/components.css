@@ -1,0 +1,125 @@
+/* src/styles/components.css */
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition:
+    transform var(--t),
+    box-shadow var(--t),
+    background var(--t),
+    border-color var(--t);
+  user-select: none;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-primary {
+  background: var(--gradient-primary);
+  color: #07101f;
+  font-weight: 700;
+  box-shadow: 0 14px 35px rgba(79, 70, 229, 0.25);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 18px 45px rgba(79, 70, 229, 0.33);
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  background: rgba(15, 23, 42, 0.6);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.btn-ghost:hover {
+  border-color: rgba(34, 211, 238, 0.45);
+  box-shadow: 0 14px 35px rgba(34, 211, 238, 0.12);
+  transform: translateY(-1px);
+}
+
+/* Card */
+.card {
+  background: rgba(15, 23, 42, 0.78);
+  border: 1px solid rgba(30, 41, 59, 0.85);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition:
+    transform var(--t),
+    box-shadow var(--t),
+    border-color var(--t);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(79, 70, 229, 0.55);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.45);
+}
+
+.card-body {
+  padding: 16px;
+}
+
+/* Badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid rgba(30, 41, 59, 0.9);
+  background: rgba(2, 6, 23, 0.35);
+}
+
+.badge-primary {
+  border-color: rgba(79, 70, 229, 0.55);
+  background: rgba(79, 70, 229, 0.14);
+}
+
+/* Inputs */
+.input {
+  width: 100%;
+  background: rgba(2, 6, 23, 0.35);
+  border: 1px solid rgba(30, 41, 59, 0.9);
+  color: var(--color-text);
+  padding: 12px 14px;
+  border-radius: 14px;
+  transition:
+    border-color var(--t),
+    box-shadow var(--t);
+}
+
+.input::placeholder {
+  color: rgba(148, 163, 184, 0.7);
+}
+
+.input:focus {
+  outline: 0;
+  border-color: rgba(34, 211, 238, 0.55);
+  box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.12);
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: rgba(30, 41, 59, 0.85);
+}
+
+/* Subtle panel */
+.panel {
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(30, 41, 59, 0.85);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}

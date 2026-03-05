@@ -1,0 +1,45 @@
+/* src/styles/variables.css */
+:root {
+  /* Brand */
+  --color-primary: #4F46E5;
+  --color-accent: #22D3EE;
+
+  /* Surfaces */
+  --color-bg: #0B1120;
+  --color-surface: #0F172A;
+
+  /* Text */
+  --color-text: #E2E8F0;
+  --color-muted: #94A3B8;
+
+  /* Lines */
+  --color-border: #1E293B;
+
+  /* Effects */
+  --shadow-lg: 0 18px 45px rgba(0,0,0,0.45);
+  --shadow-md: 0 12px 28px rgba(0,0,0,0.35);
+
+  /* Radius */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+
+  /* Spacing */
+  --s-1: 8px;
+  --s-2: 12px;
+  --s-3: 16px;
+  --s-4: 24px;
+  --s-5: 32px;
+  --s-6: 48px;
+  --s-7: 64px;
+
+  /* Layout */
+  --container: 1120px;
+
+  /* Gradient */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+
+  /* Transitions */
+  --t-fast: 180ms ease;
+  --t: 280ms ease;
+}

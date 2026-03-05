@@ -1,0 +1,91 @@
+/* src/styles/global.css */
+@import "./reset.css";
+@import "./variables.css";
+@import "./components.css";
+
+/* Base */
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+  line-height: 1.55;
+}
+
+/* Subtle background glow */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      900px 600px at 20% 15%,
+      rgba(79, 70, 229, 0.22),
+      transparent 60%
+    ),
+    radial-gradient(
+      800px 500px at 85% 20%,
+      rgba(34, 211, 238, 0.16),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 600px at 55% 90%,
+      rgba(79, 70, 229, 0.1),
+      transparent 60%
+    );
+  filter: blur(0px);
+  z-index: -1;
+}
+
+/* Helpers */
+.container {
+  width: min(var(--container), calc(100% - 2 * var(--s-4)));
+  margin-inline: auto;
+}
+
+.section {
+  padding: var(--s-7) 0;
+}
+
+.muted {
+  color: var(--color-muted);
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: clamp(34px, 4vw, 54px);
+}
+h2 {
+  font-size: clamp(24px, 2.2vw, 34px);
+}
+h3 {
+  font-size: 18px;
+}
+
+/* Selection */
+::selection {
+  background: rgba(34, 211, 238, 0.25);
+}
+
+/* Focus ring */
+:focus-visible {
+  outline: 0;
+  box-shadow:
+    0 0 0 3px rgba(79, 70, 229, 0.35),
+    0 0 0 1px rgba(34, 211, 238, 0.2);
+  border-radius: 10px;
+}

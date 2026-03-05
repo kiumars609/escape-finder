@@ -1,0 +1,8 @@
+header {
+  height: 110px;
+  background: linear-gradient(90deg, #071833 0%, #0a2b5a 50%, #0d3a7a 100%);
+}
+
+header .logo {
+  height: 100%;
+}
