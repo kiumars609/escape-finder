@@ -1,6 +1,6 @@
 .sub-header .main {
   height: 500px;
 }
-.sub-header .main .sub-header.title {
-    color: yellow;
+.sub-header .main .sub-header .title {
+  font-size: 4rem;
 }
