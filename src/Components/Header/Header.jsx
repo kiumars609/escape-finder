@@ -39,7 +39,7 @@ export default function Header() {
                     </ul>
 
                     <form className="d-flex me-5" role="search">
-                      <button className="btn btn-primary text-white col-12 px-5">
+                      <button className="btn btn-primary text-white col-12 px-5 rounded-3">
                         Find Rooms
                       </button>
                     </form>

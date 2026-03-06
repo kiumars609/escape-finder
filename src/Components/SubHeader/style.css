@@ -8,3 +8,10 @@
 .sub-header .main .sub-header .title {
   font-size: 4rem;
 }
+
+/* Button Section */
+
+.sub-header .main .button-section{
+    display: flex;
+    justify-content: space-evenly;
+}
