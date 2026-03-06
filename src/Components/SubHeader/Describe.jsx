@@ -1,7 +1,11 @@
-import React from 'react'
+import React from "react";
 
 export default function Describe() {
   return (
-    <div>Describe</div>
-  )
+    <>
+      <h1 className="sub-header title">
+        Discover The Best Scape Rooms Near You
+      </h1>
+    </>
+  );
 }

@@ -1,3 +1,6 @@
 .sub-header .main {
   height: 500px;
 }
+.sub-header .main .sub-header.title {
+    color: yellow;
+}
