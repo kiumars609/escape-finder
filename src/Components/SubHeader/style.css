@@ -11,7 +11,14 @@
 
 /* Button Section */
 
-.sub-header .main .button-section{
-    display: flex;
-    justify-content: space-evenly;
+.sub-header .main .button-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sub-header .main .button-section .glass-btn {
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px 20px;
 }
