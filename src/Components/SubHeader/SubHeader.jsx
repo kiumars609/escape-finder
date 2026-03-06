@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import Describe from "./Describe";
+import ButtonSection from "./ButtonSection";
 
 export default function SubHeader() {
   return (
@@ -9,6 +10,7 @@ export default function SubHeader() {
         <div className="row">
           <div className="col-12 col-md-12 bg-danger main">
             <Describe />
+            <ButtonSection />
           </div>
         </div>
       </div>
