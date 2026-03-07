@@ -47,12 +47,31 @@ export default function SearchSection() {
           </div>
 
           <div class="dropdown-menu">
-            <div class="dropdown-item">Easy</div>
-            <div class="dropdown-item">Medium</div>
-            <div class="dropdown-item">Hard</div>
-            <div class="dropdown-item">Expert</div>
+            <div class="dropdown-item">4 Person</div>
+            <div class="dropdown-item">5 Person</div>
+            <div class="dropdown-item">6 Person</div>
+            <div class="dropdown-item">7 Person</div>
+            <div class="dropdown-item">8 Person</div>
           </div>
         </div>
+
+
+
+        <div className="dropdown">
+          <select className="dropdown-btn">
+            <option>Difficulty</option>
+            <option>Easy</option>
+            <option>Medium</option>
+            <option>Hard</option>
+            <option>Expert</option>
+          </select>
+
+          <span className="arrow">▾</span>
+        </div>
+
+
+
+        
       </div>
     </>
   );
