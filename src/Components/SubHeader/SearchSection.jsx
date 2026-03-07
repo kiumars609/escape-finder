@@ -4,6 +4,7 @@ export default function SearchSection() {
   return (
     <>
       <div className="col-12 col-md-10 mt-5 search-section rounded-2 px-5">
+        {/* Search Room */}
         <div className="search-box col-12 col-md-3">
           <svg
             className="search-icon"
@@ -22,6 +23,35 @@ export default function SearchSection() {
           </svg>
 
           <input type="text" placeholder="Search rooms..." />
+        </div>
+
+        {/* Difficulty */}
+        <div class="dropdown">
+          <div class="dropdown-btn">
+            Difficulty
+            <span class="arrow">▾</span>
+          </div>
+
+          <div class="dropdown-menu">
+            <div class="dropdown-item">Easy</div>
+            <div class="dropdown-item">Medium</div>
+            <div class="dropdown-item">Hard</div>
+            <div class="dropdown-item">Expert</div>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <div class="dropdown-btn">
+            Players
+            <span class="arrow">▾</span>
+          </div>
+
+          <div class="dropdown-menu">
+            <div class="dropdown-item">Easy</div>
+            <div class="dropdown-item">Medium</div>
+            <div class="dropdown-item">Hard</div>
+            <div class="dropdown-item">Expert</div>
+          </div>
         </div>
       </div>
     </>
