@@ -95,26 +95,13 @@
     0 0 0 3px rgba(90, 110, 255, 0.08);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.dropdown {
+.search-section .dropdown {
   position: relative;
   width: 160px;
   font-family: sans-serif;
 }
 
-.dropdown-btn {
+.search-section .dropdown-btn {
   height: 55px;
   width: 100%;
   padding: 0 16px;
@@ -127,11 +114,11 @@
   color: white;
   cursor: pointer;
 
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 
   box-shadow:
-    0 10px 25px rgba(0,0,0,0.25),
-    inset 0 1px 0 rgba(255,255,255,0.05);
+    0 10px 25px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
 
   appearance: none;
   -webkit-appearance: none;
@@ -140,7 +127,7 @@
   font-size: 18px;
 }
 
-.arrow {
+.search-section .arrow {
   position: absolute;
   right: 16px;
   top: 50%;
@@ -150,7 +137,7 @@
   opacity: 0.8;
 }
 
-.dropdown-btn option {
+.search-section .dropdown-btn option {
   background: #1b1f45;
   color: white;
 }
