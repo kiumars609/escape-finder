@@ -38,6 +38,7 @@ export default function SearchSection() {
           <span className="arrow">▾</span>
         </div>
 
+        {/* Players */}
         <div className="dropdown">
           <select className="dropdown-btn">
             <option>Players</option>
@@ -50,6 +51,22 @@ export default function SearchSection() {
 
           <span className="arrow">▾</span>
         </div>
+
+        {/* City */}
+        <div className="dropdown">
+          <select className="dropdown-btn">
+            <option>City</option>
+            <option>Mashhad</option>
+            <option>Yerevan</option>
+            <option>Tehran</option>
+          </select>
+
+          <span className="arrow">▾</span>
+        </div>
+
+        <button className="btn btn-primary text-white col-12 col-md-2 px-5 rounded-3">
+          Search
+        </button>
       </div>
     </>
   );
