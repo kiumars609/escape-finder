@@ -4,7 +4,7 @@ export default function SearchSection() {
   return (
     <>
       <div className="col-12 col-md-10 mt-5 search-section rounded-2 px-5">
-        <div className="search-box col-12 col-md-4">
+        <div className="search-box col-12 col-md-3">
           <svg
             className="search-icon"
             xmlns="http://www.w3.org/2000/svg"

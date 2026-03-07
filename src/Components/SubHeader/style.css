@@ -52,8 +52,7 @@
 }
 
 .search-section .search-box {
-  /* width: 245px; */
-  height: 44px;
+  height: 55px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -80,8 +79,9 @@
   outline: none;
 
   color: #ffffff;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
+  padding-left: 5px;
 }
 
 .search-section .search-box input::placeholder {
