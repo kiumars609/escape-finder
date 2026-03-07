@@ -31,3 +31,12 @@
   padding: 10px 20px;
   color: #fff;
 }
+
+/* Search Section */
+
+.search-section{
+  height: 100px;
+  background-color: #0c1130;
+  border: solid 1px #353a5c;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
