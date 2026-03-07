@@ -1,4 +1,9 @@
-.show-cards{
-    height: 400px;
-    background-color: rgb(62, 52, 52);
+.show-cards {
+  height: 400px;
+  background-color: rgb(62, 52, 52);
+}
+
+.show-cards .card{
+    background-color: gray;
+    height: 200px;
 }
