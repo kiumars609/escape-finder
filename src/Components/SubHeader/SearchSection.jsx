@@ -26,37 +26,6 @@ export default function SearchSection() {
         </div>
 
         {/* Difficulty */}
-        <div class="dropdown">
-          <div class="dropdown-btn">
-            Difficulty
-            <span class="arrow">▾</span>
-          </div>
-
-          <div class="dropdown-menu">
-            <div class="dropdown-item">Easy</div>
-            <div class="dropdown-item">Medium</div>
-            <div class="dropdown-item">Hard</div>
-            <div class="dropdown-item">Expert</div>
-          </div>
-        </div>
-
-        <div class="dropdown">
-          <div class="dropdown-btn">
-            Players
-            <span class="arrow">▾</span>
-          </div>
-
-          <div class="dropdown-menu">
-            <div class="dropdown-item">4 Person</div>
-            <div class="dropdown-item">5 Person</div>
-            <div class="dropdown-item">6 Person</div>
-            <div class="dropdown-item">7 Person</div>
-            <div class="dropdown-item">8 Person</div>
-          </div>
-        </div>
-
-
-
         <div className="dropdown">
           <select className="dropdown-btn">
             <option>Difficulty</option>
@@ -69,9 +38,18 @@ export default function SearchSection() {
           <span className="arrow">▾</span>
         </div>
 
+        <div className="dropdown">
+          <select className="dropdown-btn">
+            <option>Players</option>
+            <option>4 Person</option>
+            <option>5 Person</option>
+            <option>6 Person</option>
+            <option>7 Person</option>
+            <option>8 Person</option>
+          </select>
 
-
-        
+          <span className="arrow">▾</span>
+        </div>
       </div>
     </>
   );
