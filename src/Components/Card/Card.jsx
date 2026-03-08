@@ -2,9 +2,10 @@ import React from "react";
 import "./style.css";
 
 export default function Card({ item }) {
-  const difficulty = [1,2,3,4,5].map((n) => {
-   return n <= item.difficulty ? "🔒" : "🔓"
-  })
+  // Show difficulty with Lock
+  const difficulty = [1, 2, 3, 4, 5].map((n) => {
+    return n <= item.difficulty ? "🔒" : "🔓";
+  });
   return (
     <>
       <div

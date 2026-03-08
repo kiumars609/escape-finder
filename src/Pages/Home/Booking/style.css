@@ -1,0 +1,17 @@
+.booking-section {
+  position: relative;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(45, 86, 255, 0.22) 0%,
+      rgba(10, 24, 70, 0.12) 25%,
+      rgba(2, 8, 29, 0) 55%
+    ),
+    linear-gradient(90deg, #02081d 0%, #071341 50%, #02081d 100%);
+}

@@ -3,6 +3,7 @@ import Header from "../../Components/Header/Header";
 import SubHeader from "./SubHeader/SubHeader";
 import Cards from "./Cards/Cards";
 import roomsData from "../../Data/RoomsData";
+import Booking from "./Booking/Booking";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Header />
       <SubHeader />
       <Cards roomsData={roomsData} />
+      <Booking />
     </>
   );
 }
