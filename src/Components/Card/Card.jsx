@@ -1,10 +1,13 @@
 import React from "react";
 import "./style.css";
 
-export default function Card({item}) {
+export default function Card({ item }) {
   return (
     <>
-      <div className="escape-card mx-auto" style={{ backgroundImage: `url(${item.main_image})` }}>
+      <div
+        className="escape-card mx-auto"
+        style={{ backgroundImage: `url(${item.main_image})` }}
+      >
         <div className="card-overlay"></div>
 
         <div className="card-angle">{item.time}'</div>
@@ -27,14 +30,12 @@ export default function Card({item}) {
 
             <div className="main-info">
               <h2 className="room-title">{item.title}</h2>
-              <p className="room-subtitle">
-                {item.subtitle}
-              </p>
+              <p className="room-subtitle">{item.subtitle}</p>
             </div>
           </div>
 
           <div className="extra-info">
-            <p>SUITABLE FOR 2-6 PEOPLE</p>
+            <p>SUITABLE FOR {item.players} PEOPLE</p>
             <p>Difficulty level: 🔒 🔒 🔒 🔒 🔓</p>
           </div>
         </div>

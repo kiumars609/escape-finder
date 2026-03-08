@@ -1,5 +1,6 @@
 import sevenImg from "../assets/images/escaperooms/seven/main.png";
 import stalkerImg from "../assets/images/escaperooms/stalker/main.png";
+import lastlaugh from "../assets/images/escaperooms/lastlaugh/main.png";
 
 const roomsData = [
   {
@@ -9,7 +10,7 @@ const roomsData = [
     subtitle: "The way to redemption is only one!",
     players: "2-6",
     difficulty: 4,
-    time: 60
+    time: 60,
   },
   {
     id: 2,
@@ -18,8 +19,17 @@ const roomsData = [
     subtitle: "Reveal the clues and discover the Stalker!",
     players: "2-6",
     difficulty: 4,
-    time: 90
-  }
+    time: 90,
+  },
+  {
+    id: 3,
+    title: "last laugh",
+    main_image: lastlaugh,
+    subtitle: "Are you ready to perform? Not that easy",
+    players: "3-10",
+    difficulty: 3,
+    time: 120,
+  },
 ];
 
 export default roomsData;
