@@ -1,8 +1,11 @@
+import sevenImg from "../assets/images/escaperooms/seven/main.png";
+import stalkerImg from "../assets/images/escaperooms/stalker/main.png";
+
 const roomsData = [
   {
     id: 1,
-    title: "Seven",
-    main_image: "/assets/images/escaperooms/seven/main.png",
+    title: "seven",
+    main_image: sevenImg,
     subtitle: "The way to redemption is only one!",
     players: "2-6",
     difficulty: 4,
@@ -10,12 +13,12 @@ const roomsData = [
   },
   {
     id: 2,
-    title: "Seven",
-    main_image: "/assets/images/escaperooms/seven/main.png",
-    subtitle: "The way to redemption is only one!",
+    title: "stalker",
+    main_image: stalkerImg,
+    subtitle: "Reveal the clues and discover the Stalker!",
     players: "2-6",
     difficulty: 4,
-    time: 60
+    time: 90
   }
 ];
 

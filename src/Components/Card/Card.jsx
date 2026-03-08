@@ -1,13 +1,13 @@
 import React from "react";
 import "./style.css";
 
-export default function Card() {
+export default function Card({item}) {
   return (
     <>
-      <div className="escape-card mx-auto">
+      <div className="escape-card mx-auto" style={{ backgroundImage: `url(${item.main_image})` }}>
         <div className="card-overlay"></div>
 
-        <div className="card-angle">60'</div>
+        <div className="card-angle">{item.time}'</div>
 
         <div className="card-bottom">
           <div className="card-main">
@@ -26,9 +26,9 @@ export default function Card() {
             </div>
 
             <div className="main-info">
-              <h2 className="room-title">SEVEN</h2>
+              <h2 className="room-title">{item.title}</h2>
               <p className="room-subtitle">
-                The way to redemption is only one!
+                {item.subtitle}
               </p>
             </div>
           </div>

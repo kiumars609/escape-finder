@@ -14,7 +14,7 @@ export default function Cards({ roomsData }) {
     });
   return (
     <>
-      <div className="row col-12 col-md-10 mx-auto show-cards bg-danger g-3">
+      <div className="row col-12 col-md-10 mx-auto show-cards g-3">
         {items}
       </div>
     </>
