@@ -9,7 +9,7 @@ const roomsData = [
     main_image: sevenImg,
     subtitle: "The way to redemption is only one!",
     players: "2-6",
-    difficulty: 4,
+    difficulty: 5,
     time: 60,
   },
   {
@@ -18,7 +18,7 @@ const roomsData = [
     main_image: stalkerImg,
     subtitle: "Reveal the clues and discover the Stalker!",
     players: "2-6",
-    difficulty: 4,
+    difficulty: 2,
     time: 90,
   },
   {

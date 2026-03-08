@@ -2,6 +2,9 @@ import React from "react";
 import "./style.css";
 
 export default function Card({ item }) {
+  const difficulty = [1,2,3,4,5].map((n) => {
+   return n <= item.difficulty ? "🔒" : "🔓"
+  })
   return (
     <>
       <div
@@ -36,7 +39,7 @@ export default function Card({ item }) {
 
           <div className="extra-info">
             <p>SUITABLE FOR {item.players} PEOPLE</p>
-            <p>Difficulty level: 🔒 🔒 🔒 🔒 🔓</p>
+            <p>Difficulty level: {difficulty}</p>
           </div>
         </div>
       </div>
