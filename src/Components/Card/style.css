@@ -121,3 +121,9 @@
 .escape-card:hover .extra-info {
   opacity: 1;
 }
+
+.escape-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  transition: all .4s ease;
+}
