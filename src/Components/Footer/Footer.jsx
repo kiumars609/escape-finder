@@ -11,6 +11,9 @@ export default function Footer() {
             <div className="row">
               <div className="col-12 col-md-4 bg-danger d-flex">
                 <img src={logo} alt="logo" className="logo" />
+                <h5>
+                    Find the best escape rooms around you.
+                </h5>
               </div>
               <div className="col-12 col-md-3 bg-danger">a</div>
               <div className="col-12 col-md-2 bg-danger">a</div>
