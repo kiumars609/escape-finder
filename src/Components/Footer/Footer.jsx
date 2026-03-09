@@ -7,7 +7,7 @@ export default function Footer() {
     <>
       <div className="container-fluid">
         <div className="row footer">
-          <div className="col-12 h-75 bg-warning">
+          <div className="col-12 h-75">
             <div className="row">
               <div className="col-12 col-md-4 bg-danger d-flex flex-column align-items-center">
                 <img src={logo} alt="logo" className="logo" />
