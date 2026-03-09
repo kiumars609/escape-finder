@@ -6,7 +6,12 @@ export default function Footer() {
     <>
     <div className="container-fluid">
         <div className="row bg-danger footer">
-            a
+            <div className="col-12 bg-warning">
+                test
+            </div>
+            <div className="col-12 bg-success">
+                test
+            </div>
         </div>
     </div>
     </>
