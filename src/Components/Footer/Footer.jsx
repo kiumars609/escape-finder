@@ -9,10 +9,10 @@ export default function Footer() {
         <div className="row footer">
           <div className="col-12 h-75 bg-warning">
             <div className="row">
-              <div className="col-12 col-md-4 bg-danger d-flex">
+              <div className="col-12 col-md-4 bg-danger d-flex flex-column align-items-center">
                 <img src={logo} alt="logo" className="logo" />
                 <h5>
-                    Find the best escape rooms around you.
+                    Find the best escape room <br/> experiences near you.
                 </h5>
               </div>
               <div className="col-12 col-md-3 bg-danger">a</div>
