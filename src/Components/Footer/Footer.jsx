@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import logo from '../../assets/images/logo/logo.png'
+import logo from "../../assets/images/logo/logo.png";
 
 export default function Footer() {
   return (
@@ -9,12 +9,10 @@ export default function Footer() {
         <div className="row footer">
           <div className="col-12 h-75 bg-warning">
             <div className="row">
-              <div className="col-12 col-md-4 bg-danger">
-
+              <div className="col-12 col-md-4 bg-danger d-flex">
+                <img src={logo} alt="logo" className="logo" />
               </div>
-              <div className="col-12 col-md-3 bg-danger">
-                <img src={logo} alt="logo" className="" />
-              </div>
+              <div className="col-12 col-md-3 bg-danger">a</div>
               <div className="col-12 col-md-2 bg-danger">a</div>
               <div className="col-12 col-md-2 bg-danger">a</div>
               <div className="col-12 col-md-2 bg-danger"></div>

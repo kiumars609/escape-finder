@@ -41,3 +41,7 @@ footer a {
 footer a:hover {
   color: #ffffff;
 }
+
+.footer .logo{
+    width: 200px;
+}
