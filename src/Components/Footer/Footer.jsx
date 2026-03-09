@@ -16,8 +16,8 @@ export default function Footer() {
                 </h5>
               </div>
               <div className="col-12 col-md-3 bg-danger">a</div>
-              <div className="col-12 col-md-2 bg-danger">a</div>
-              <div className="col-12 col-md-2 bg-danger">a</div>
+              <div className="col-12 col-md-2 bg-danger">b</div>
+              <div className="col-12 col-md-2 bg-danger">c</div>
               <div className="col-12 col-md-2 bg-danger"></div>
             </div>
           </div>
