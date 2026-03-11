@@ -15,7 +15,34 @@ export default function Footer() {
                   Find the best escape room <br /> experiences near you.
                 </h5>
               </div>
-              <div className="col-12 col-md-3 bg-danger">a</div>
+              <div className="col-12 col-md-3 bg-danger">
+                <h5 className="text-white mb-3">Quick Links</h5>
+                <ul className="list-unstyled">
+                  <li className="mb-2">
+                    <a href="#" className="text-decoration-none text-light">
+                      About Us
+                    </a>
+                  </li>
+
+                  <li className="mb-2">
+                    <a href="#" className="text-decoration-none text-light">
+                      How It Works
+                    </a>
+                  </li>
+
+                  <li className="mb-2">
+                    <a href="#" className="text-decoration-none text-light">
+                      Contact
+                    </a>
+                  </li>
+
+                  <li className="mb-2">
+                    <a href="#" className="text-decoration-none text-light">
+                      FAQs
+                    </a>
+                  </li>
+                </ul>
+              </div>
               <div className="col-12 col-md-2 bg-danger">b</div>
               <div className="col-12 col-md-2 bg-danger">c</div>
               <div className="col-12 col-md-2 bg-danger"></div>
