@@ -75,49 +75,59 @@ footer a:hover {
 
 
 .footer {
-  padding: 42px 0 20px;
+  position: relative;
+  margin-top: 0;
+  padding: 32px 0 18px;
   background:
     radial-gradient(
       circle at 50% 0%,
-      rgba(84, 111, 255, 0.12) 0%,
-      rgba(20, 29, 86, 0.05) 35%,
-      transparent 70%
+      rgba(84, 111, 255, 0.1) 0%,
+      rgba(20, 29, 86, 0.04) 38%,
+      transparent 72%
     ),
-    linear-gradient(180deg, #121846 0%, #070a22 100%);
+    linear-gradient(180deg, #111744 0%, #070a22 100%);
   border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+.footer-container {
+  max-width: 1080px;
+}
+
 .footer-row {
-  align-items: start;
-  row-gap: 28px;
+  align-items: flex-start;
+  row-gap: 18px;
 }
 
 .footer-brand {
-  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 34px;
 }
 
 .footer-logo {
   width: 100%;
-  max-width: 230px;
+  max-width: 260px;
   height: auto;
   display: block;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .footer-desc {
-  margin: 0;
+  max-width: 290px;
   color: #d8defe;
-  font-size: 16px;
-  line-height: 1.55;
-  max-width: 260px;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 500;
 }
 
 .footer-title {
   margin: 0 0 14px;
   color: #ffffff;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.35;
+  white-space: nowrap;
 }
 
 .footer-list {
@@ -136,41 +146,41 @@ footer a:hover {
 .footer-list a {
   color: #d8defe;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.5;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, opacity 0.2s ease;
 }
 
 .footer-list a:hover {
-  color: #6fb0ff;
+  color: #75b6ff;
 }
 
 .footer-bottom {
-  margin-top: 28px;
-  padding-top: 16px;
+  margin-top: 24px;
+  padding-top: 14px;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   text-align: center;
 }
 
 .footer-copy {
-  margin: 0;
   color: rgba(255, 255, 255, 0.72);
-  font-size: 15px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.45;
+  font-weight: 500;
 }
 
 @media (max-width: 991.98px) {
   .footer {
-    padding: 34px 0 18px;
+    padding: 28px 0 16px;
   }
 
   .footer-brand {
-    padding-right: 0;
+    padding-top: 0;
   }
 
   .footer-logo {
-    max-width: 210px;
-    margin-bottom: 18px;
+    max-width: 230px;
+    margin-bottom: 16px;
   }
 
   .footer-desc {
@@ -180,7 +190,7 @@ footer a:hover {
 
 @media (max-width: 767.98px) {
   .footer {
-    padding: 28px 0 16px;
+    padding: 24px 0 14px;
   }
 
   .footer-row {
@@ -188,16 +198,17 @@ footer a:hover {
   }
 
   .footer-title {
-    font-size: 16px;
-    margin-bottom: 12px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    white-space: normal;
   }
 
   .footer-list a,
   .footer-desc {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .footer-copy {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
