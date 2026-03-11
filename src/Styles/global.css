@@ -89,3 +89,38 @@ h3 {
     0 0 0 1px rgba(34, 211, 238, 0.2);
   border-radius: 10px;
 }
+
+
+/* Scrollbar کل سایت */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070a22;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    #4f6dff,
+    #6fb0ff
+  );
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    #6fb0ff,
+    #9ad0ff
+  );
+}
+
+/* Firefox */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #6fb0ff #070a22;
+}
