@@ -75,50 +75,129 @@ footer a:hover {
 
 
 .footer {
-  padding-top: 70px;
-  padding-bottom: 30px;
+  padding: 42px 0 20px;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(84, 111, 255, 0.12) 0%,
+      rgba(20, 29, 86, 0.05) 35%,
+      transparent 70%
+    ),
+    linear-gradient(180deg, #121846 0%, #070a22 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.footer-top {
-  padding-bottom: 40px;
-  align-items: flex-start;
+.footer-row {
+  align-items: start;
+  row-gap: 28px;
 }
 
-.footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.08);
-  margin-top: 30px;
-  padding-top: 20px;
+.footer-brand {
+  padding-right: 30px;
 }
 
-.logo {
-  max-width: 220px;
+.footer-logo {
+  width: 100%;
+  max-width: 230px;
   height: auto;
+  display: block;
+  margin-bottom: 22px;
 }
 
-.footer-text {
-  color: #d9def7;
-  line-height: 1.6;
+.footer-desc {
+  margin: 0;
+  color: #d8defe;
+  font-size: 16px;
+  line-height: 1.55;
   max-width: 260px;
 }
 
 .footer-title {
+  margin: 0 0 14px;
   color: #ffffff;
+  font-size: 17px;
   font-weight: 700;
-  margin-bottom: 16px;
-  white-space: nowrap;
+  line-height: 1.35;
 }
 
-.footer-link {
-  color: #cfd6ff;
+.footer-list {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+}
+
+.footer-list li:last-child {
+  margin-bottom: 0;
+}
+
+.footer-list a {
+  color: #d8defe;
   text-decoration: none;
-  transition: 0.25s;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: color 0.2s ease;
 }
 
-.footer-link:hover {
+.footer-list a:hover {
   color: #6fb0ff;
 }
 
+.footer-bottom {
+  margin-top: 28px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  text-align: center;
+}
+
 .footer-copy {
-  color: rgba(255,255,255,0.75);
-  font-size: 1rem;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+@media (max-width: 991.98px) {
+  .footer {
+    padding: 34px 0 18px;
+  }
+
+  .footer-brand {
+    padding-right: 0;
+  }
+
+  .footer-logo {
+    max-width: 210px;
+    margin-bottom: 18px;
+  }
+
+  .footer-desc {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer {
+    padding: 28px 0 16px;
+  }
+
+  .footer-row {
+    row-gap: 22px;
+  }
+
+  .footer-title {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .footer-list a,
+  .footer-desc {
+    font-size: 15px;
+  }
+
+  .footer-copy {
+    font-size: 14px;
+  }
 }
