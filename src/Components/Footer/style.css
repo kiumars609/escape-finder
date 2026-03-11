@@ -45,3 +45,70 @@ footer a:hover {
 .footer .logo{
     width: 200px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.footer-top {
+  padding-bottom: 40px;
+  align-items: flex-start;
+}
+
+.footer-bottom {
+  min-height: 80px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer .logo {
+  max-width: 220px;
+  height: auto;
+}
+
+.footer-text {
+  color: #d9def7;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footer h5 {
+  color: white;
+}
+
+.footer ul li a {
+  color: #d9def7;
+  transition: 0.3s;
+}
+
+.footer ul li a:hover {
+  color: #ffffff;
+}
