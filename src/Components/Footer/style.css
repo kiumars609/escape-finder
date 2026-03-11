@@ -75,7 +75,7 @@ footer a:hover {
 
 
 .footer {
-  padding-top: 60px;
+  padding-top: 70px;
   padding-bottom: 30px;
 }
 
@@ -85,11 +85,12 @@ footer a:hover {
 }
 
 .footer-bottom {
-  min-height: 80px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin-top: 30px;
+  padding-top: 20px;
 }
 
-.footer .logo {
+.logo {
   max-width: 220px;
   height: auto;
 }
@@ -97,18 +98,27 @@ footer a:hover {
 .footer-text {
   color: #d9def7;
   line-height: 1.6;
-  margin: 0;
+  max-width: 260px;
 }
 
-.footer h5 {
-  color: white;
-}
-
-.footer ul li a {
-  color: #d9def7;
-  transition: 0.3s;
-}
-
-.footer ul li a:hover {
+.footer-title {
   color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 16px;
+  white-space: nowrap;
+}
+
+.footer-link {
+  color: #cfd6ff;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.footer-link:hover {
+  color: #6fb0ff;
+}
+
+.footer-copy {
+  color: rgba(255,255,255,0.75);
+  font-size: 1rem;
 }
