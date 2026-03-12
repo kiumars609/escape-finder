@@ -1,6 +1,8 @@
 import sevenImg from "../assets/images/escaperooms/seven/main.png";
 import stalkerImg from "../assets/images/escaperooms/stalker/main.png";
 import lastlaugh from "../assets/images/escaperooms/lastlaugh/main.png";
+import theothers from "../assets/images/escaperooms/theothers/main.png";
+import foreveralone from "../assets/images/escaperooms/foreveralone/main.png";
 
 const roomsData = [
   {
@@ -28,6 +30,24 @@ const roomsData = [
     subtitle: "Are you ready to perform? Not that easy",
     players: "3-10",
     difficulty: 3,
+    time: 120,
+  },
+  {
+    id: 4,
+    title: "the others",
+    main_image: theothers,
+    subtitle: "Save the souls of the abandoned children!",
+    players: "2-6",
+    difficulty: 5,
+    time: 80,
+  },
+  {
+    id: 5,
+    title: "forever alone (pt 1)",
+    main_image: foreveralone,
+    subtitle: "1st escape room based on a true story!",
+    players: "3-7",
+    difficulty: 5,
     time: 120,
   },
 ];
