@@ -13,6 +13,7 @@ const roomsData = [
     players: "2-6",
     difficulty: 5,
     time: 60,
+    city: "mashhad",
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ const roomsData = [
     players: "2-6",
     difficulty: 2,
     time: 90,
+    city: "yerevan",
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const roomsData = [
     players: "3-10",
     difficulty: 3,
     time: 120,
+    city: "mashhad",
   },
   {
     id: 4,
@@ -40,6 +43,7 @@ const roomsData = [
     players: "2-6",
     difficulty: 5,
     time: 80,
+    city: "tehran",
   },
   {
     id: 5,
@@ -49,6 +53,7 @@ const roomsData = [
     players: "3-7",
     difficulty: 5,
     time: 120,
+    city: "mashhad",
   },
 ];
 
