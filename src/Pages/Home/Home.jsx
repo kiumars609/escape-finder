@@ -5,15 +5,22 @@ import Cards from "./Cards/Cards";
 import roomsData from "../../Data/RoomsData";
 import Booking from "./Booking/Booking";
 import Footer from "../../Components/Footer/Footer";
+import Layout from "../../Components/Layout/Layout";
 
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header />
       <SubHeader />
       <Cards roomsData={roomsData} />
       <Booking />
-      <Footer />
+      <Footer /> */}
+
+      <Layout>
+        <SubHeader />
+        <Cards roomsData={roomsData} />
+        <Booking />
+      </Layout>
     </>
   );
 }
