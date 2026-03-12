@@ -10,12 +10,6 @@ import Layout from "../../Components/Layout/Layout";
 export default function Home() {
   return (
     <>
-      {/* <Header />
-      <SubHeader />
-      <Cards roomsData={roomsData} />
-      <Booking />
-      <Footer /> */}
-
       <Layout>
         <SubHeader />
         <Cards roomsData={roomsData} />
