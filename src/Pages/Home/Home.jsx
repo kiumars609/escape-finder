@@ -6,9 +6,9 @@ import Booking from "./Booking/Booking";
 import Layout from "../../Components/Layout/Layout";
 
 export default function Home() {
-  const cityFiltered = "tehran";
-  const resultFiltered = cityFiltered
-    ? roomsData && roomsData.filter((room) => room.city === cityFiltered)
+  const cityFilter = "yerevan";
+  const resultFiltered = cityFilter
+    ? roomsData && roomsData.filter((room) => room.city === cityFilter)
     : roomsData;
 
   return (
