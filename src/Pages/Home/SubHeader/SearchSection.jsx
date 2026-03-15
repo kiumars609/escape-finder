@@ -55,7 +55,7 @@ export default function SearchSection({handleCityFilter}) {
         {/* City */}
         <div className="dropdown">
           <select className="dropdown-btn" onChange={(e) => handleCityFilter(e.target.value)}>
-            <option value={null}>City</option>
+            <option disabled>City</option>
             <option value={"mashhad"}>Mashhad</option>
             <option value={"yerevan"}>Yerevan</option>
             <option value={"tehran"}>Tehran</option>
