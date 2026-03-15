@@ -4,7 +4,7 @@ import Describe from "./Describe";
 import ButtonSection from "./ButtonSection";
 import SearchSection from "./SearchSection";
 
-export default function SubHeader() {
+export default function SubHeader({ roomsData }) {
   return (
     <>
       <div className="container-fluid sub-header">
