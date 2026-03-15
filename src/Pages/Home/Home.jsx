@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SubHeader from "./SubHeader/SubHeader";
 import Cards from "./Cards/Cards";
 import roomsData from "../../Data/RoomsData";
@@ -6,7 +6,13 @@ import Booking from "./Booking/Booking";
 import Layout from "../../Components/Layout/Layout";
 
 export default function Home() {
-  const cityFilter = "yerevan";
+  const [city, setCity] = useState(false);
+
+  const handleCityFilter = (item) =>{
+    setCity(item)
+  }
+
+  const cityFilter = city;
   const resultFiltered = cityFilter
     ? roomsData && roomsData.filter((room) => room.city === cityFilter)
     : roomsData;
@@ -14,7 +20,7 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <SubHeader roomsData={roomsData} />
+        <SubHeader handleCityFilter={handleCityFilter} />
         <Cards roomsData={resultFiltered} />
         <Booking />
       </Layout>
