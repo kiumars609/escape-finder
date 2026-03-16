@@ -8,9 +8,9 @@ import Layout from "../../Components/Layout/Layout";
 export default function Home() {
   const [city, setCity] = useState(false);
 
-  const handleCityFilter = (item) =>{
-    setCity(item)
-  }
+  const handleCityFilter = (item) => {
+    setCity(item);
+  };
 
   const cityFilter = city;
   const resultFiltered = cityFilter
