@@ -13,6 +13,7 @@ export default function Home() {
     setCity(item);
   };
 
+  // Filter Action
   const cityFilter = city;
   const resultFiltered = cityFilter
     ? roomsData && roomsData.filter((room) => room.city === cityFilter)
