@@ -8,6 +8,7 @@ import Layout from "../../Components/Layout/Layout";
 export default function Home() {
   const [city, setCity] = useState(false);
 
+  // City Filter
   const handleCityFilter = (item) => {
     setCity(item);
   };
