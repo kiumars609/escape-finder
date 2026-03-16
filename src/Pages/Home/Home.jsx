@@ -6,6 +6,7 @@ import Booking from "./Booking/Booking";
 import Layout from "../../Components/Layout/Layout";
 
 export default function Home() {
+  // Get City
   const [city, setCity] = useState(false);
 
   // City Filter
