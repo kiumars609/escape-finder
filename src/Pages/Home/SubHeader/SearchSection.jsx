@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function SearchSection({ handleCityFilter }) {
+export default function SearchSection({ handleFilteredChange }) {
   return (
     <>
       <div className="col-12 col-md-10 mt-5 search-section rounded-2 px-5">
@@ -56,7 +56,7 @@ export default function SearchSection({ handleCityFilter }) {
         <div className="dropdown">
           <select
             className="dropdown-btn"
-            onChange={(e) => handleCityFilter(e.target.value)}
+            onChange={(e) => handleFilteredChange("city",e.target.value)}
           >
             <option disabled>City</option>
             <option value={"mashhad"}>Mashhad</option>

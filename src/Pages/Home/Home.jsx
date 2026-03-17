@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <SubHeader handleCityFilter={handleCityFilter} />
+        <SubHeader handleFilteredChange={handleFilteredChange} />
         <Cards roomsData={resultFiltered} />
         <Booking />
       </Layout>
