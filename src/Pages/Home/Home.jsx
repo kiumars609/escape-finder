@@ -6,11 +6,21 @@ import Booking from "./Booking/Booking";
 import Layout from "../../Components/Layout/Layout";
 
 export default function Home() {
-  const [city, setCity] = useState(false);
+  // const [city, setCity] = useState(false);
+  const [filtered, setFiltered] = useState({
+    city: "",
+  });
 
-  const handleCityFilter = (item) =>{
-    setCity(item)
-  }
+  const handleFilteredChange = (key, value) => {
+    setFiltered((prev) => ({
+      ...prev,
+      [key]: value,
+    }));
+  };
+
+  // const handleCityFilter = (item) => {
+  //   setCity(item);
+  // };
 
   const cityFilter = city;
   const resultFiltered = cityFilter
