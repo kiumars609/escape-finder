@@ -41,12 +41,12 @@ export default function SearchSection({ handleFilteredChange }) {
         {/* Players */}
         <div className="dropdown">
           <select className="dropdown-btn">
-            <option>Players</option>
-            <option>4 Person</option>
-            <option>5 Person</option>
-            <option>6 Person</option>
-            <option>7 Person</option>
-            <option>8 Person</option>
+            <option disabled>Players</option>
+            <option value={4}>4 Person</option>
+            <option value={5}>5 Person</option>
+            <option value={6}>6 Person</option>
+            <option value={7}>7 Person</option>
+            <option value={8}>8 Person</option>
           </select>
 
           <span className="arrow">▾</span>

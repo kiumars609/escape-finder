@@ -26,18 +26,6 @@ export default function Home() {
     );
   });
 
-  // const resultFiltered = filteredRooms && filteredRooms.map()
-
-  // const handleCityFilter = (item) => {
-  //   setCity(item);
-  // };
-
-  // const cityFilter = filtered;
-  // const resultFiltered =
-  // const resultFiltered = cityFilter
-  //   ? roomsData && roomsData.filter((room) => room.city === cityFilter)
-  //   : roomsData;
-
   return (
     <>
       <Layout>
