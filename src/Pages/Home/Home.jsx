@@ -9,6 +9,7 @@ export default function Home() {
   // const [city, setCity] = useState(false);
   const [filtered, setFiltered] = useState({
     city: "",
+    players: "",
   });
 
   const handleFilteredChange = (key, value) => {
@@ -18,20 +19,30 @@ export default function Home() {
     }));
   };
 
+  const filteredRooms = roomsData.filter((room) => {
+    return (
+      (!filtered.city || room.city === filtered.city) &&
+      (!filtered.players || room.players === filtered.players)
+    );
+  });
+
+  // const resultFiltered = filteredRooms && filteredRooms.map()
+
   // const handleCityFilter = (item) => {
   //   setCity(item);
   // };
 
-  const cityFilter = city;
-  const resultFiltered = cityFilter
-    ? roomsData && roomsData.filter((room) => room.city === cityFilter)
-    : roomsData;
+  // const cityFilter = filtered;
+  // const resultFiltered =
+  // const resultFiltered = cityFilter
+  //   ? roomsData && roomsData.filter((room) => room.city === cityFilter)
+  //   : roomsData;
 
   return (
     <>
       <Layout>
         <SubHeader handleFilteredChange={handleFilteredChange} />
-        <Cards roomsData={resultFiltered} />
+        <Cards roomsData={filteredRooms} />
         <Booking />
       </Layout>
     </>
