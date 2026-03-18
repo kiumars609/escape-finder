@@ -21,10 +21,11 @@ export default function Home() {
   };
 
   const filterRooms = roomsData.filter((room) => {
-
-    if(filters.title){
-      console.log(filters.title);
-      
+    if (
+      filters.title &&
+      !room.title.toLowerCase().includes(filters.title.toLowerCase())
+    ) {
+      return false;
     }
 
     if (filters.city && room.city !== filters.city) {
@@ -49,10 +50,7 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <SubHeader
-          handleFilteredChange={handleFilterRooms}
-          filters={filters}
-        />
+        <SubHeader handleFilteredChange={handleFilterRooms} filters={filters} />
         <Cards roomsData={filterRooms} />
         <Booking />
       </Layout>
