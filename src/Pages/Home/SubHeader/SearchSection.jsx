@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SearchSection({ handleFilteredChange }) {
   // const difficultSelect = [1, 2, 3, 4, 5].map((n) => {
-  //   n <= roomsData.difficulty ? "<option>🔒</option>" : "<option>🔓</option>";
+  //   n === roomsData.difficulty ? "<option>🔒</option>" : "<option>🔓</option>";
   // });
 
   return (
@@ -31,7 +31,10 @@ export default function SearchSection({ handleFilteredChange }) {
 
         {/* Difficulty */}
         <div className="dropdown">
-          <select className="dropdown-btn">
+          <select
+            className="dropdown-btn"
+            onChange={(e) => handleFilteredChange("difficulty", e.target.value)}
+          >
             <option disabled>Difficulty</option>
             <option value={1}>🔒🔓🔓🔓🔓</option>
             <option value={2}>🔒🔒🔓🔓🔓</option>

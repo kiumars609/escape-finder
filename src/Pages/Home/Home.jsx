@@ -10,7 +10,8 @@ export default function Home() {
 
   const [filters, setFilters] = useState({
     city: "",
-    players: 0,
+    players: "",
+    difficulty: 0,
   });
 
   const handleFilterRooms = (key, value) => {
@@ -37,13 +38,20 @@ export default function Home() {
       }
     }
 
+    if (filters.difficulty && room.difficulty !== filters.difficulty) {
+      return false;
+    }
+
     return true;
   });
 
   return (
     <>
       <Layout>
-        <SubHeader roomsData={filterRooms} handleFilteredChange={handleFilterRooms} />
+        <SubHeader
+          roomsData={filterRooms}
+          handleFilteredChange={handleFilterRooms}
+        />
         <Cards roomsData={filterRooms} />
         <Booking />
       </Layout>
