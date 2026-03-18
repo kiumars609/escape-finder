@@ -4,7 +4,7 @@ import Describe from "./Describe";
 import ButtonSection from "./ButtonSection";
 import SearchSection from "./SearchSection";
 
-export default function SubHeader({ handleFilteredChange }) {
+export default function SubHeader({ handleFilteredChange, roomsData }) {
   return (
     <>
       <div className="container-fluid sub-header">
@@ -12,7 +12,10 @@ export default function SubHeader({ handleFilteredChange }) {
           <div className="col-12 col-md-12 main">
             <Describe />
             <ButtonSection />
-            <SearchSection handleFilteredChange={handleFilteredChange} />
+            <SearchSection
+              roomsData={roomsData}
+              handleFilteredChange={handleFilteredChange}
+            />
           </div>
         </div>
       </div>

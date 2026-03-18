@@ -1,6 +1,10 @@
 import React from "react";
 
 export default function SearchSection({ handleFilteredChange }) {
+  // const difficultSelect = [1, 2, 3, 4, 5].map((n) => {
+  //   n <= roomsData.difficulty ? "<option>🔒</option>" : "<option>🔓</option>";
+  // });
+
   return (
     <>
       <div className="col-12 col-md-10 mt-5 search-section rounded-2 px-5">
@@ -28,11 +32,12 @@ export default function SearchSection({ handleFilteredChange }) {
         {/* Difficulty */}
         <div className="dropdown">
           <select className="dropdown-btn">
-            <option>Difficulty</option>
-            <option>Easy</option>
-            <option>Medium</option>
-            <option>Hard</option>
-            <option>Expert</option>
+            <option disabled>Difficulty</option>
+            <option value={1}>🔒🔓🔓🔓🔓</option>
+            <option value={2}>🔒🔒🔓🔓🔓</option>
+            <option value={3}>🔒🔒🔒🔓🔓</option>
+            <option value={4}>🔒🔒🔒🔒🔓</option>
+            <option value={5}>🔒🔒🔒🔒🔒</option>
           </select>
 
           <span className="arrow">▾</span>
