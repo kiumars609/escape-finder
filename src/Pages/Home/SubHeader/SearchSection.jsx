@@ -33,7 +33,7 @@ export default function SearchSection({ handleFilteredChange }) {
         <div className="dropdown">
           <select
             className="dropdown-btn"
-            onChange={(e) => handleFilteredChange("difficulty", e.target.value)}
+            onChange={(e) => handleFilteredChange("difficulty", Number(e.target.value))}
           >
             <option disabled>Difficulty</option>
             <option value={1}>🔒🔓🔓🔓🔓</option>

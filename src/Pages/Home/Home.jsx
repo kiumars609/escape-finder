@@ -22,10 +22,6 @@ export default function Home() {
   };
 
   const filterRooms = roomsData.filter((room) => {
-    // return (
-    //   (!filters.city || room.city === filters.city) &&
-    //   (!filters.players || room.players === filters.players)
-    // );
     if (filters.city && room.city !== filters.city) {
       return false;
     }
