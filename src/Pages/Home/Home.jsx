@@ -21,12 +21,24 @@ export default function Home() {
   };
 
   const filterRooms = roomsData.filter((room) => {
-    return(
-      (!filters.city || room.city === filters.city) &&
-      (!filters.players || room.players === filters.players)
-    )
-  })
+    // return (
+    //   (!filters.city || room.city === filters.city) &&
+    //   (!filters.players || room.players === filters.players)
+    // );
+    if (filters.city && room.city !== filters.city) {
+      return false;
+    }
 
+    if (filters.players) {
+      const [min, max] = room.players.split("-").map(Number);
+
+      if (filters.players < min || filters.players > max) {
+        return false;
+      }
+    }
+
+    return true;
+  });
 
   return (
     <>
