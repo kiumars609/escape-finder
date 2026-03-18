@@ -1,10 +1,6 @@
 import React from "react";
 
-export default function SearchSection({ handleFilteredChange,filters }) {
-  // const difficultSelect = [1, 2, 3, 4, 5].map((n) => {
-  //   n === roomsData.difficulty ? "<option>🔒</option>" : "<option>🔓</option>";
-  // });
-
+export default function SearchSection({ handleFilteredChange, filters }) {
   return (
     <>
       <div className="col-12 col-md-10 mt-5 search-section rounded-2 px-5">
@@ -26,14 +22,21 @@ export default function SearchSection({ handleFilteredChange,filters }) {
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
 
-          <input type="text" value={filters.title} onChange={(e) => handleFilteredChange("title", e.target.value)} placeholder="Search rooms..." />
+          <input
+            type="text"
+            value={filters.title}
+            onChange={(e) => handleFilteredChange("title", e.target.value)}
+            placeholder="Search rooms..."
+          />
         </div>
 
         {/* Difficulty */}
         <div className="dropdown">
           <select
             className="dropdown-btn"
-            onChange={(e) => handleFilteredChange("difficulty", Number(e.target.value))}
+            onChange={(e) =>
+              handleFilteredChange("difficulty", Number(e.target.value))
+            }
           >
             <option disabled>Difficulty</option>
             <option value={1}>🔒🔓🔓🔓🔓</option>

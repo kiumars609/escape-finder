@@ -50,7 +50,6 @@ export default function Home() {
     <>
       <Layout>
         <SubHeader
-          roomsData={filterRooms}
           handleFilteredChange={handleFilterRooms}
           filters={filters}
         />
