@@ -40,7 +40,10 @@ export default function SearchSection({ handleFilteredChange }) {
 
         {/* Players */}
         <div className="dropdown">
-          <select className="dropdown-btn">
+          <select
+            className="dropdown-btn"
+            onChange={(e) => handleFilteredChange("players", e.target.value)}
+          >
             <option disabled>Players</option>
             <option value={4}>4 Person</option>
             <option value={5}>5 Person</option>
@@ -56,7 +59,7 @@ export default function SearchSection({ handleFilteredChange }) {
         <div className="dropdown">
           <select
             className="dropdown-btn"
-            onChange={(e) => handleFilteredChange("city",e.target.value)}
+            onChange={(e) => handleFilteredChange("city", e.target.value)}
           >
             <option disabled>City</option>
             <option value={"mashhad"}>Mashhad</option>
