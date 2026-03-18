@@ -6,9 +6,8 @@ import Booking from "./Booking/Booking";
 import Layout from "../../Components/Layout/Layout";
 
 export default function Home() {
-  // const [city, setCity] = useState(false);
-
   const [filters, setFilters] = useState({
+    title: "",
     city: "",
     players: "",
     difficulty: 0,
@@ -22,6 +21,12 @@ export default function Home() {
   };
 
   const filterRooms = roomsData.filter((room) => {
+
+    if(filters.title){
+      console.log(filters.title);
+      
+    }
+
     if (filters.city && room.city !== filters.city) {
       return false;
     }
@@ -47,6 +52,7 @@ export default function Home() {
         <SubHeader
           roomsData={filterRooms}
           handleFilteredChange={handleFilterRooms}
+          filters={filters}
         />
         <Cards roomsData={filterRooms} />
         <Booking />
