@@ -10,7 +10,6 @@ export default function Room() {
       <Layout>
         <main>
           <Details />
-
           <Booking />
 
           <section className="info-strip">
