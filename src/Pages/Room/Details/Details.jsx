@@ -10,7 +10,7 @@ export default function Details({room}) {
 
         <div className="container room-hero-content">
           <Image room={room} />
-          <Info />
+          <Info room={room} />
         </div>
       </section>
     </>

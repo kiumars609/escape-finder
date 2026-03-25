@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function Info() {
+export default function Info({room}) {
   return (
     <>
       <div className="room-hero-info">
-        <span className="eyebrow">Premium Escape Experience</span>
-        <h1>SEVEN</h1>
-        <p className="room-meta">Suitable for 2–6 people</p>
+        <span className="eyebrow">{room.subtitle}</span>
+        <h1>{room.title.toUpperCase()}</h1>
+        <p className="room-meta">Suitable for {room.players} people</p>
 
         <div className="difficulty-row">
           <span>Difficulty Level</span>
