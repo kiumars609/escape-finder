@@ -3,13 +3,18 @@ import Layout from "../../Components/Layout/Layout";
 import "./style.css";
 import Details from "./Details/Details";
 import Booking from "./Booking/Booking";
+import { useParams } from "react-router-dom";
+import roomsData from "../../Data/RoomsData";
 
 export default function Room() {
+  const { id } = useParams();
+  const room = id && roomsData.find((item) => item.id === Number(id));
+
   return (
     <>
       <Layout>
         <main>
-          <Details />
+          <Details room={room} />
           <Booking />
 
           <section className="info-strip">
