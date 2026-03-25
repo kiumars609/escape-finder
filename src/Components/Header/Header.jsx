@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import logo from "../../assets/images/logo/logo.png";
+import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <>
@@ -22,9 +23,9 @@ export default function Header() {
                   >
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                       <li className="nav-item mx-3">
-                        <a className="nav-link fs-5 active" href="#">
-                          Home
-                        </a>
+                        <Link to={'/'} className="nav-link fs-5 active">
+                        Home
+                        </Link>
                       </li>
                       <li className="nav-item mx-3">
                         <a className="nav-link fs-5" href="#">
