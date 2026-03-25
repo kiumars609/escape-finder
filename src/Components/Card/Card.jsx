@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 export default function Card({ item }) {
   // Show difficulty with Lock
@@ -25,11 +26,14 @@ export default function Card({ item }) {
                 <line x1="8" y1="2" x2="8" y2="6" />
                 <line x1="3" y1="10" x2="21" y2="10" />
               </svg>
-              <span>
-                BOOK
-                <br />
-                NOW
-              </span>
+
+              <Link to={`/room/${item.id}`}>
+                <span>
+                  BOOK
+                  <br />
+                  NOW
+                </span>
+              </Link>
             </div>
 
             <div className="main-info">
