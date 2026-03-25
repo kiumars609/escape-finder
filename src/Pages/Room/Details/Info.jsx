@@ -1,6 +1,14 @@
 import React from "react";
 
-export default function Info({room}) {
+export default function Info({ room }) {
+  const star = [1, 2, 3, 4, 5].map((item) =>
+    room.difficulty >= item ? (
+      <span>★</span>
+    ) : (
+      <span className="star-muted">★</span>
+    ),
+  );
+
   return (
     <>
       <div className="room-hero-info">
@@ -11,33 +19,24 @@ export default function Info({room}) {
         <div className="difficulty-row">
           <span>Difficulty Level</span>
           <div className="difficulty-stars" aria-label="5 out of 6 difficulty">
-            <span>★</span>
-            <span>★</span>
-            <span>★</span>
-            <span>★</span>
-            <span>★</span>
-            <span className="star-muted">★</span>
+            {star}
           </div>
         </div>
 
-        <p className="room-description">
-          Face the seven deadly sins in a dark, story-driven challenge where
-          every decision tests your mind, courage, and teamwork. Can you resist
-          temptation and escape before judgment finds you?
-        </p>
+        <p className="room-description">{room.subtitle}</p>
 
         <div className="room-features">
           <div className="feature-card">
             <span className="feature-label">Duration</span>
-            <strong>60 min</strong>
+            <strong>{room.time} min</strong>
           </div>
           <div className="feature-card">
             <span className="feature-label">Players</span>
-            <strong>2–6</strong>
+            <strong>{room.players}</strong>
           </div>
           <div className="feature-card">
             <span className="feature-label">Category</span>
-            <strong>Thriller</strong>
+            <strong>Horror</strong>
           </div>
         </div>
       </div>
