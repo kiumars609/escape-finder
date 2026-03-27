@@ -13,20 +13,31 @@ export default function Calendar() {
     days.push(day);
   }
 
-  const emptydays = [];
+  const emptyDays = [];
   for (let i = 0; i < firstDayOfMonth; i++) {
-    emptydays.push(null);
+    emptyDays.push(null);
   }
 
-  console.log(currentDate);
+  const calendarDays = [...emptyDays, ...days];
+
+  const gridCalendar = calendarDays.map((day, index) => {
+    return (
+      <div key={index} className="calendar-day">
+        {day !== null ? day : ""}
+      </div>
+    );
+  });
 
   return (
     <>
-      <h3>
+      {/* <h3>
         March 2026 (
         {month + " " + year + " " + daysInMonth + " " + firstDayOfMonth})
       </h3>
-      <p>{JSON.stringify(days)}</p>
+      <p>{JSON.stringify(emptyDays)}</p>
+      <p>{JSON.stringify(days)}</p> */}
+
+      <div className="calendar-grid">{gridCalendar}</div>
 
       {/* <div className="calendar-card">
         <div className="section-head">
