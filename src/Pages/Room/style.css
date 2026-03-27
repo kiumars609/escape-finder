@@ -29,8 +29,16 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(212, 175, 55, 0.14), transparent 30%),
-    radial-gradient(circle at top right, rgba(255, 255, 255, 0.05), transparent 25%),
+    radial-gradient(
+      circle at top left,
+      rgba(212, 175, 55, 0.14),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at top right,
+      rgba(255, 255, 255, 0.05),
+      transparent 25%
+    ),
     linear-gradient(180deg, #09090d 0%, #111119 100%);
   color: var(--text);
 }
@@ -134,8 +142,12 @@ textarea {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(255,255,255,0.02), transparent),
-    radial-gradient(circle at 20% 20%, rgba(212,175,55,0.12), transparent 25%);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent),
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(212, 175, 55, 0.12),
+      transparent 25%
+    );
   pointer-events: none;
 }
 
@@ -158,7 +170,11 @@ textarea {
 }
 
 .room-hero-info {
-  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.03));
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.03)
+  );
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
   border-radius: var(--radius-xl);
@@ -209,7 +225,7 @@ textarea {
 }
 
 .star-muted {
-  color: rgba(255,255,255,0.2);
+  color: rgba(255, 255, 255, 0.2);
 }
 
 .room-description {
@@ -252,7 +268,11 @@ textarea {
 
 .calendar-card,
 .booking-panel {
-  background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.03));
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.045),
+    rgba(255, 255, 255, 0.03)
+  );
   border: 1px solid var(--line);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow);
@@ -286,7 +306,7 @@ textarea {
   height: 42px;
   border-radius: 50%;
   border: 1px solid var(--line);
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   color: var(--text);
   cursor: pointer;
 }
@@ -329,7 +349,7 @@ textarea {
 }
 
 .calendar-day.disabled {
-  background: rgba(255,255,255,0.03);
+  background: rgba(255, 255, 255, 0.03);
   opacity: 0.45;
 }
 
@@ -340,12 +360,12 @@ textarea {
 
 .calendar-day.available:hover {
   transform: translateY(-3px);
-  border-color: rgba(212,175,55,0.4);
+  border-color: rgba(212, 175, 55, 0.4);
 }
 
 .calendar-day.active {
   outline: 2px solid var(--accent);
-  box-shadow: 0 0 0 6px rgba(212,175,55,0.08);
+  box-shadow: 0 0 0 6px rgba(212, 175, 55, 0.08);
 }
 
 .slot-block {
@@ -368,7 +388,7 @@ textarea {
   height: 46px;
   border-radius: 999px;
   border: 1px solid var(--line);
-  background: rgba(255,255,255,0.04);
+  background: rgba(255, 255, 255, 0.04);
   color: var(--text);
   cursor: pointer;
   transition: 0.25s;
@@ -384,7 +404,7 @@ textarea {
 .price-box {
   padding: 18px 20px;
   border-radius: 18px;
-  background: rgba(255,255,255,0.045);
+  background: rgba(255, 255, 255, 0.045);
   border: 1px solid var(--line);
   margin-bottom: 22px;
 }
@@ -430,7 +450,7 @@ textarea {
 .form-group select,
 .form-group textarea {
   width: 100%;
-  background: rgba(255,255,255,0.045);
+  background: rgba(255, 255, 255, 0.045);
   border: 1px solid var(--line);
   border-radius: 14px;
   min-height: 52px;
@@ -452,8 +472,8 @@ textarea {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: rgba(212,175,55,0.55);
-  box-shadow: 0 0 0 4px rgba(212,175,55,0.08);
+  border-color: rgba(212, 175, 55, 0.55);
+  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.08);
 }
 
 .checkbox-row {
@@ -481,8 +501,12 @@ textarea {
 
 .info-strip-inner {
   background:
-    linear-gradient(135deg, rgba(212,175,55,0.12), rgba(255,255,255,0.04)),
-    rgba(255,255,255,0.03);
+    linear-gradient(
+      135deg,
+      rgba(212, 175, 55, 0.12),
+      rgba(255, 255, 255, 0.04)
+    ),
+    rgba(255, 255, 255, 0.03);
   border: 1px solid var(--line);
   border-radius: var(--radius-xl);
   padding: 30px;
@@ -499,19 +523,19 @@ textarea {
 }
 
 .outline-btn {
-  border: 1px solid rgba(212,175,55,0.45);
+  border: 1px solid rgba(212, 175, 55, 0.45);
   color: var(--accent-2);
   white-space: nowrap;
 }
 
 .outline-btn:hover {
-  background: rgba(212,175,55,0.08);
+  background: rgba(212, 175, 55, 0.08);
 }
 
 /* footer */
 .site-footer {
   border-top: 1px solid var(--line);
-  background: rgba(0,0,0,0.22);
+  background: rgba(0, 0, 0, 0.22);
   padding: 42px 0;
 }
 
@@ -605,6 +629,16 @@ textarea {
 
 
 
+
+
+
+
+
+
+
+
+
+
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -617,4 +651,8 @@ textarea {
   border: 1px solid #333;
   border-radius: 10px;
   padding: 10px;
+}
+.calendar-day.active {
+  border: 2px solid gold;
+  background: rgba(255, 215, 0, 0.12);
 }
