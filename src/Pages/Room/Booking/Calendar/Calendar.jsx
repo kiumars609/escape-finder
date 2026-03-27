@@ -2,19 +2,33 @@ import React, { useState } from "react";
 
 export default function Calendar() {
   const [currentDate, setCurrentDate] = useState(new Date());
-  
+
   const year = currentDate.getFullYear();
   const month = currentDate.getMonth();
   const daysInMonth = new Date(year, month + 1, 0).getDate();
   const firstDayOfMonth = new Date(year, month, 1).getDay();
-  
+
+  const days = [];
+  for (let day = 1; day <= daysInMonth; day++) {
+    days.push(day);
+  }
+
+  const emptydays = [];
+  for (let i = 0; i < firstDayOfMonth; i++) {
+    emptydays.push(null);
+  }
 
   console.log(currentDate);
-  
 
   return (
     <>
-      <div className="calendar-card">
+      <h3>
+        March 2026 (
+        {month + " " + year + " " + daysInMonth + " " + firstDayOfMonth})
+      </h3>
+      <p>{JSON.stringify(days)}</p>
+
+      {/* <div className="calendar-card">
         <div className="section-head">
           <span className="section-kicker">Step 1</span>
           <h2>Select a date</h2>
@@ -22,7 +36,9 @@ export default function Calendar() {
 
         <div className="calendar-topbar">
           <button className="calendar-nav-btn">&#10094;</button>
-          <h3>March 2026 ({month + ' ' + year + ' ' + daysInMonth + ' ' + firstDayOfMonth})</h3>
+          <h3>
+            March 2026 
+          </h3>
           <button className="calendar-nav-btn">&#10095;</button>
         </div>
 
@@ -166,7 +182,7 @@ export default function Calendar() {
             <small>7 Available</small>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
