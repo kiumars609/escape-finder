@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 export default function Calendar() {
   const [currentDate, setCurrentDate] = useState(new Date());
+  const [selectedDate, setSelectedDate] = useState(null);
 
   const year = currentDate.getFullYear();
   const month = currentDate.getMonth();
@@ -22,7 +23,11 @@ export default function Calendar() {
 
   const gridCalendar = calendarDays.map((day, index) => {
     return (
-      <div key={index} className="calendar-day">
+      <div
+        key={index}
+        className="calendar-day"
+        onClick={() => day !== null && setSelectedDate(day)}
+      >
         {day !== null ? day : ""}
       </div>
     );
@@ -38,7 +43,7 @@ export default function Calendar() {
       <p>{JSON.stringify(days)}</p> */}
 
       <div className="calendar-grid">{gridCalendar}</div>
-
+      <p>Selected Day: {selectedDate}</p>
       {/* <div className="calendar-card">
         <div className="section-head">
           <span className="section-kicker">Step 1</span>
