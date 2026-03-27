@@ -6,6 +6,8 @@ export default function Calendar() {
   const year = currentDate.getFullYear();
   const month = currentDate.getMonth();
   const daysInMonth = new Date(year, month + 1, 0).getDate();
+  const firstDayOfMonth = new Date(year, month, 1).getDay();
+  
 
   console.log(currentDate);
   
@@ -20,7 +22,7 @@ export default function Calendar() {
 
         <div className="calendar-topbar">
           <button className="calendar-nav-btn">&#10094;</button>
-          <h3>March 2026 ({month + ' ' + year + ' ' + daysInMonth})</h3>
+          <h3>March 2026 ({month + ' ' + year + ' ' + daysInMonth + ' ' + firstDayOfMonth})</h3>
           <button className="calendar-nav-btn">&#10095;</button>
         </div>
 
