@@ -24,10 +24,14 @@ export default function Calendar() {
 
   const handlePrevMonth = () => {
     setCurrentDate(new Date(year, month - 1, 1));
+    setSelectedDate(null);
+    setSelectedSlot(null);
   };
 
   const handleNextMonth = () => {
     setCurrentDate(new Date(year, month + 1, 1));
+    setSelectedDate(null);
+    setSelectedSlot(null);
   };
 
   const availableDates = {
@@ -67,7 +71,12 @@ export default function Calendar() {
       <div
         key={index}
         className={`calendar-day ${day === null ? "empty" : ""} ${isAvailable ? "available" : ""} ${selectedDate === day ? "active" : ""}`}
-        onClick={() => isAvailable && setSelectedDate(day)}
+        onClick={() => {
+          if (isAvailable) {
+            setSelectedDate(day);
+            setSelectedSlot(null);
+          }
+        }}
       >
         <span>{day}</span>
         {isAvailable && <small>{availableDates[dateString]} Available</small>}
