@@ -693,3 +693,13 @@ textarea {
   background: rgba(0, 128, 0, 0.12);
   border: 1px solid green;
 }
+
+.calendar-day {
+  cursor: default;
+}
+
+.calendar-day.available {
+  background: rgba(0, 128, 0, 0.12);
+  border: 1px solid green;
+  cursor: pointer;
+}
