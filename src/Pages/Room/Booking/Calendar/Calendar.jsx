@@ -33,7 +33,7 @@ export default function Calendar() {
     return (
       <div
         key={index}
-        className={`calendar-day ${selectedDate === day ? "active" : ""}`}
+        className={`calendar-day ${day === null ? "empty" : ""} ${selectedDate === day ? "active" : ""}`}
         onClick={() => day !== null && setSelectedDate(day)}
       >
         {day !== null ? day : ""}
