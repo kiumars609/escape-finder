@@ -37,6 +37,23 @@ export default function Calendar() {
     "2026-03-26": 2,
   };
 
+  const slotsByDate = {
+    "2026-03-22": ["12:00", "14:30", "17:00"],
+    "2026-03-23": ["11:00", "13:30", "15:00", "18:00", "20:30"],
+    "2026-03-24": ["12:30", "16:00", "19:00"],
+    "2026-03-25": ["10:00", "14:00"],
+    "2026-03-26": ["13:00", "15:30", "21:00"],
+  };
+
+  const selectedDateString =
+    selectedDate !== null
+      ? `${year}-${String(month + 1).padStart(2, "0")}-${String(selectedDate).padStart(2, "0")}`
+      : null;
+
+  const selectedSlots = selectedDateString
+    ? slotsByDate[selectedDateString] || []
+    : [];
+
   const gridCalendar = calendarDays.map((day, index) => {
     const dateString =
       day !== null
@@ -83,6 +100,25 @@ export default function Calendar() {
       </div>
       <div className="calendar-grid">{gridCalendar}</div>
 
+
+
+      <div className="slots-section">
+        <h3>Available Time Slots</h3>
+
+        {selectedDate === null ? (
+          <p>Please select a date first.</p>
+        ) : selectedSlots.length > 0 ? (
+          <div className="slot-list">
+            {selectedSlots.map((slot, index) => (
+              <button key={index} className="slot-btn">
+                {slot}
+              </button>
+            ))}
+          </div>
+        ) : (
+          <p>No time slots available for this date.</p>
+        )}
+      </div>
       {/* <div className="calendar-card">
         <div className="section-head">
           <span className="section-kicker">Step 1</span>

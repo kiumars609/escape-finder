@@ -720,3 +720,23 @@ textarea {
   font-size: 12px;
   opacity: 0.8;
 }
+
+.slots-section {
+  margin-top: 24px;
+}
+
+.slot-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.slot-btn {
+  padding: 10px 14px;
+  border: 1px solid #444;
+  background: transparent;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
