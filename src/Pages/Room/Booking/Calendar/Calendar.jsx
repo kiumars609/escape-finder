@@ -56,8 +56,17 @@ export default function Calendar() {
         </h3>
         <button onClick={handleNextMonth}>Next</button>
       </div>
+      <div className="calendar-weekdays">
+        <span>Sun</span>
+        <span>Mon</span>
+        <span>Tue</span>
+        <span>Wed</span>
+        <span>Thu</span>
+        <span>Fri</span>
+        <span>Sat</span>
+      </div>
       <div className="calendar-grid">{gridCalendar}</div>
-      <p>Selected Day: {selectedDate}</p>
+
       {/* <div className="calendar-card">
         <div className="section-head">
           <span className="section-kicker">Step 1</span>
