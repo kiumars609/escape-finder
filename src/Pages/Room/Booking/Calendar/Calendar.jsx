@@ -29,6 +29,14 @@ export default function Calendar() {
     setCurrentDate(new Date(year, month + 1, 1));
   };
 
+  const availableDates = {
+    "2026-03-22": 3,
+    "2026-03-23": 7,
+    "2026-03-24": 7,
+    "2026-03-25": 5,
+    "2026-03-26": 2,
+  };
+
   const gridCalendar = calendarDays.map((day, index) => {
     return (
       <div
