@@ -21,6 +21,14 @@ export default function Calendar() {
 
   const calendarDays = [...emptyDays, ...days];
 
+  const handlePrevMonth = () => {
+    setCurrentDate(new Date(year, month - 1, 1));
+  };
+
+  const handleNextMonth = () => {
+    setCurrentDate(new Date(year, month + 1, 1));
+  };
+
   const gridCalendar = calendarDays.map((day, index) => {
     return (
       <div
@@ -41,7 +49,13 @@ export default function Calendar() {
       </h3>
       <p>{JSON.stringify(emptyDays)}</p>
       <p>{JSON.stringify(days)}</p> */}
-
+      <div className="calendar-topbar">
+        <button onClick={handlePrevMonth}>Prev</button>
+        <h3>
+          {currentDate.toLocaleString("en-US", { month: "long" })} {year}
+        </h3>
+        <button onClick={handleNextMonth}>Next</button>
+      </div>
       <div className="calendar-grid">{gridCalendar}</div>
       <p>Selected Day: {selectedDate}</p>
       {/* <div className="calendar-card">

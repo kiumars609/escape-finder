@@ -656,3 +656,14 @@ textarea {
   border: 2px solid gold;
   background: rgba(255, 215, 0, 0.12);
 }
+
+.calendar-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.calendar-topbar h3 {
+  margin: 0;
+}
