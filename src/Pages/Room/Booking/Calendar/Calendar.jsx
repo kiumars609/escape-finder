@@ -132,6 +132,21 @@ export default function Calendar() {
         )}
 
         <p>Selected Slot: {selectedSlot}</p>
+
+        <div className="booking-summary">
+          <h3>Your Selection</h3>
+
+          {selectedDate && selectedSlot ? (
+            <p>
+              Date: {currentDate.toLocaleString("en-US", { month: "long" })}{" "}
+              {selectedDate}, {year}
+              <br />
+              Time: {selectedSlot}
+            </p>
+          ) : (
+            <p>Please select a date and time slot.</p>
+          )}
+        </div>
       </div>
       {/* <div className="calendar-card">
         <div className="section-head">

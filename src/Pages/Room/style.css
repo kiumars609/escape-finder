@@ -745,3 +745,10 @@ textarea {
   border-color: gold;
   background: rgba(255, 215, 0, 0.12);
 }
+
+.booking-summary {
+  margin-top: 24px;
+  padding: 16px;
+  border: 1px solid #333;
+  border-radius: 12px;
+}
