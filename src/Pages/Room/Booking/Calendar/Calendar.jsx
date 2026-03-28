@@ -38,7 +38,6 @@ export default function Calendar() {
   };
 
   const gridCalendar = calendarDays.map((day, index) => {
-
     const dateString =
       day !== null
         ? `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`
@@ -52,7 +51,8 @@ export default function Calendar() {
         className={`calendar-day ${day === null ? "empty" : ""} ${isAvailable ? "available" : ""} ${selectedDate === day ? "active" : ""}`}
         onClick={() => isAvailable && setSelectedDate(day)}
       >
-        {day !== null ? day : ""}
+        <span>{day}</span>
+        {isAvailable && <small>{availableDates[dateString]} Available</small>}
       </div>
     );
   });

@@ -703,3 +703,20 @@ textarea {
   border: 1px solid green;
   cursor: pointer;
 }
+
+.calendar-day {
+  min-height: 90px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.calendar-day span {
+  font-weight: 700;
+}
+
+.calendar-day small {
+  font-size: 12px;
+  opacity: 0.8;
+}
