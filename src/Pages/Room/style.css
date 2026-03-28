@@ -740,3 +740,8 @@ textarea {
   border-radius: 10px;
   cursor: pointer;
 }
+
+.slot-btn.active {
+  border-color: gold;
+  background: rgba(255, 215, 0, 0.12);
+}

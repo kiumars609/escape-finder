@@ -3,6 +3,7 @@ import React, { useState } from "react";
 export default function Calendar() {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [selectedDate, setSelectedDate] = useState(null);
+  const [selectedSlot, setSelectedSlot] = useState(null);
 
   const year = currentDate.getFullYear();
   const month = currentDate.getMonth();
@@ -100,8 +101,6 @@ export default function Calendar() {
       </div>
       <div className="calendar-grid">{gridCalendar}</div>
 
-
-
       <div className="slots-section">
         <h3>Available Time Slots</h3>
 
@@ -110,7 +109,11 @@ export default function Calendar() {
         ) : selectedSlots.length > 0 ? (
           <div className="slot-list">
             {selectedSlots.map((slot, index) => (
-              <button key={index} className="slot-btn">
+              <button
+                key={index}
+                className={`slot-btn ${selectedSlot === slot ? "active" : ""}`}
+                onClick={() => setSelectedSlot(slot)}
+              >
                 {slot}
               </button>
             ))}
@@ -118,6 +121,8 @@ export default function Calendar() {
         ) : (
           <p>No time slots available for this date.</p>
         )}
+
+        <p>Selected Slot: {selectedSlot}</p>
       </div>
       {/* <div className="calendar-card">
         <div className="section-head">
