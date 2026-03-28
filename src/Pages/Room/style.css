@@ -688,3 +688,8 @@ textarea {
   background: transparent;
   cursor: default;
 }
+
+.calendar-day.available {
+  background: rgba(0, 128, 0, 0.12);
+  border: 1px solid green;
+}

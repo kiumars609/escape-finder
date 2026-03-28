@@ -45,11 +45,11 @@ export default function Calendar() {
         : null;
 
     const isAvailable = day !== null && availableDates[dateString];
-    
+
     return (
       <div
         key={index}
-        className={`calendar-day ${day === null ? "empty" : ""} ${selectedDate === day ? "active" : ""}`}
+        className={`calendar-day ${day === null ? "empty" : ""} ${isAvailable ? "available" : ""} ${selectedDate === day ? "active" : ""}`}
         onClick={() => day !== null && setSelectedDate(day)}
       >
         {day !== null ? day : ""}
