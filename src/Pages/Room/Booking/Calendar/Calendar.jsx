@@ -148,7 +148,8 @@ export default function Calendar() {
           )}
         </div>
       </div>
-      {/* <div className="calendar-card">
+
+      <div className="calendar-card">
         <div className="section-head">
           <span className="section-kicker">Step 1</span>
           <h2>Select a date</h2>
@@ -156,9 +157,7 @@ export default function Calendar() {
 
         <div className="calendar-topbar">
           <button className="calendar-nav-btn">&#10094;</button>
-          <h3>
-            March 2026 
-          </h3>
+          <h3>March 2026</h3>
           <button className="calendar-nav-btn">&#10095;</button>
         </div>
 
@@ -302,7 +301,7 @@ export default function Calendar() {
             <small>7 Available</small>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 }

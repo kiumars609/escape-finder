@@ -615,30 +615,6 @@ textarea {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -667,7 +643,6 @@ textarea {
 .calendar-topbar h3 {
   margin: 0;
 }
-
 
 .calendar-weekdays {
   display: grid;
