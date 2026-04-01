@@ -23,8 +23,8 @@ export default function Header() {
                   >
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                       <li className="nav-item mx-3">
-                        <Link to={'/'} className="nav-link fs-5 active">
-                        Home
+                        <Link to={"/"} className="nav-link fs-5 active">
+                          Home
                         </Link>
                       </li>
                       <li className="nav-item mx-3">
