@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Calendar from "./Calendar/Calendar";
 import BookingPanel from "./BookingPanel/BookingPanel";
+import { Navigate } from "react-router-dom";
 
 export default function Booking() {
   const [currentDate, setCurrentDate] = useState(new Date(2026, 2, 1));
@@ -39,6 +40,22 @@ export default function Booking() {
   const selectedSlots = selectedDateString
     ? slotsByDate[selectedDateString] || []
     : [];
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!selectedDate || !selectedSlot) {
+      alert("Koskesh");
+      return;
+    }
+
+    Navigate("/payment", {
+      state: {
+        date: selectedDate,
+        time: selectedSlot,
+      },
+    });
+  };
 
   return (
     <section className="booking-section">
