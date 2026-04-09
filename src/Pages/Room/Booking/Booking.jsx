@@ -5,8 +5,8 @@ import { useNavigate } from "react-router-dom";
 
 export default function Booking() {
   const [currentDate, setCurrentDate] = useState(new Date(2026, 2, 1));
-  const [selectedDate, setSelectedDate] = useState(23);
-  const [selectedSlot, setSelectedSlot] = useState("15:00");
+  const [selectedDate, setSelectedDate] = useState(null);
+  const [selectedSlot, setSelectedSlot] = useState(null);
   const navigate = useNavigate();
 
   const slotsByDate = {
