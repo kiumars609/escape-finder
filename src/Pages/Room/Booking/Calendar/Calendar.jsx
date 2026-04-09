@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 
-export default function Calendar() {
-  const [currentDate, setCurrentDate] = useState(new Date(2026, 2, 1));
-  const [selectedDate, setSelectedDate] = useState(23);
-
+export default function Calendar({
+  currentDate,
+  setCurrentDate,
+  selectedDate,
+  setSelectedDate,
+  setSelectedSlot,
+}) {
   const year = currentDate.getFullYear();
   const month = currentDate.getMonth();
 
@@ -26,11 +29,13 @@ export default function Calendar() {
   const handlePrevMonth = () => {
     setCurrentDate(new Date(year, month - 1, 1));
     setSelectedDate(null);
+    setSelectedSlot(null);
   };
 
   const handleNextMonth = () => {
     setCurrentDate(new Date(year, month + 1, 1));
     setSelectedDate(null);
+    setSelectedSlot(null);
   };
 
   const emptyDays = Array.from({ length: firstDayOfMonth }, () => null);
@@ -77,11 +82,7 @@ export default function Calendar() {
             return <div key={index} className="calendar-day empty"></div>;
           }
 
-          const dateString = `${year}-${String(month + 1).padStart(
-            2,
-            "0",
-          )}-${String(day).padStart(2, "0")}`;
-
+          const dateString = `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
           const availableCount = availableDates[dateString];
           const isAvailable = !!availableCount;
           const isActive = selectedDate === day;
@@ -89,11 +90,12 @@ export default function Calendar() {
           return (
             <div
               key={index}
-              className={`calendar-day ${
-                isAvailable ? "available" : "disabled"
-              } ${isActive ? "active" : ""}`}
+              className={`calendar-day ${isAvailable ? "available" : "disabled"} ${isActive ? "active" : ""}`}
               onClick={() => {
-                if (isAvailable) setSelectedDate(day);
+                if (isAvailable) {
+                  setSelectedDate(day);
+                  setSelectedSlot(null);
+                }
               }}
             >
               <span>{day}</span>

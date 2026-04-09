@@ -9,7 +9,15 @@ export default function Booking() {
 
   const slotsByDate = {
     "2026-03-22": ["12:00", "14:30", "17:00"],
-    "2026-03-23": ["12:00", "13:30", "15:00", "16:30", "18:00", "19:30", "21:00"],
+    "2026-03-23": [
+      "12:00",
+      "13:30",
+      "15:00",
+      "16:30",
+      "18:00",
+      "19:30",
+      "21:00",
+    ],
     "2026-03-24": ["12:30", "16:00", "19:00"],
     "2026-03-25": ["10:00", "14:00", "17:30"],
     "2026-03-26": ["13:00", "15:30", "21:00"],
@@ -28,7 +36,9 @@ export default function Booking() {
       ? `${year}-${String(month + 1).padStart(2, "0")}-${String(selectedDate).padStart(2, "0")}`
       : null;
 
-  const selectedSlots = selectedDateString ? slotsByDate[selectedDateString] || [] : [];
+  const selectedSlots = selectedDateString
+    ? slotsByDate[selectedDateString] || []
+    : [];
 
   return (
     <section className="booking-section">
