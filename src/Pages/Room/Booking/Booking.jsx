@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import Calendar from "./Calendar/Calendar";
 import BookingPanel from "./BookingPanel/BookingPanel";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Booking() {
   const [currentDate, setCurrentDate] = useState(new Date(2026, 2, 1));
   const [selectedDate, setSelectedDate] = useState(23);
   const [selectedSlot, setSelectedSlot] = useState("15:00");
+  const navigate = useNavigate();
 
   const slotsByDate = {
     "2026-03-22": ["12:00", "14:30", "17:00"],
@@ -49,7 +50,7 @@ export default function Booking() {
       return;
     }
 
-    Navigate("/payment", {
+    navigate("/payment", {
       state: {
         date: selectedDate,
         time: selectedSlot,
@@ -74,6 +75,7 @@ export default function Booking() {
           setSelectedSlot={setSelectedSlot}
           selectedSlots={selectedSlots}
           currentDate={currentDate}
+          handleSubmit={handleSubmit}
         />
       </div>
     </section>
