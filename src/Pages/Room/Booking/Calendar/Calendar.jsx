@@ -24,6 +24,7 @@ export default function Calendar({
     "2026-03-29": 8,
     "2026-03-30": 7,
     "2026-03-31": 7,
+    "2026-04-28": 7,
   };
 
   const handlePrevMonth = () => {
