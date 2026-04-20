@@ -7,7 +7,19 @@ export default function Booking() {
   const [currentDate, setCurrentDate] = useState(new Date(2026, 2, 1));
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedSlot, setSelectedSlot] = useState(null);
+  const [formData, setFormData] = useState({
+    fullname: "",
+  });
   const navigate = useNavigate();
+
+  const handleChange = (e) => {
+    const { name, type, value, checked } = e.target;
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+  };
 
   const slotsByDate = {
     "2026-03-22": ["12:00", "14:30", "17:00"],
