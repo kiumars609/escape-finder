@@ -46,7 +46,7 @@ export default function Booking() {
     e.preventDefault();
 
     if (!selectedDate || !selectedSlot) {
-      alert("Koni");
+      alert("Please Select your Date and Time");
       return;
     }
 
