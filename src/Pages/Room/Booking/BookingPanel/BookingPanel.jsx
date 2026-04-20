@@ -65,26 +65,47 @@ export default function BookingPanel({
               name="fullname"
               type="text"
               id="fullname"
+              placeholder="Enter your full name"
               value={formData.fullname}
               onChange={handleChange}
-              placeholder="Enter your full name"
             />
           </div>
           <div className="form-group">
             <label htmlFor="phone">Phone</label>
-            <input type="tel" id="phone" placeholder="+971..." />
+            <input
+              name="phone"
+              type="tel"
+              id="phone"
+              placeholder="+971..."
+              value={formData.phone}
+              onChange={handleChange}
+            />
           </div>
         </div>
 
         <div className="form-group">
           <label htmlFor="email">E-mail</label>
-          <input type="email" id="email" placeholder="your@email.com" />
+          <input
+            name="email"
+            type="email"
+            id="email"
+            placeholder="your@email.com"
+            value={formData.email}
+            onChange={handleChange}
+          />
         </div>
 
         <div className="form-row">
           <div className="form-group">
             <label htmlFor="team">Team Name</label>
-            <input type="text" id="team" placeholder="Optional" />
+            <input
+              name="teamName"
+              type="text"
+              id="team"
+              placeholder="Optional"
+              value={formData.teamName}
+              onChange={handleChange}
+            />
           </div>
           <div className="form-group">
             <label htmlFor="coupon">Coupon Code</label>

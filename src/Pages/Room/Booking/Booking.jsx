@@ -9,7 +9,11 @@ export default function Booking() {
   const [selectedSlot, setSelectedSlot] = useState(null);
   const [formData, setFormData] = useState({
     fullname: "",
+    phone: "",
+    email: "",
+    teamName: "",
   });
+
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -66,7 +70,7 @@ export default function Booking() {
       state: {
         date: selectedDate,
         time: selectedSlot,
-        name: formData.fullname
+        name: formData.fullname,
       },
     });
   };
