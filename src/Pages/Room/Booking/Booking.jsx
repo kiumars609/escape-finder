@@ -71,6 +71,9 @@ export default function Booking() {
         date: selectedDate,
         time: selectedSlot,
         name: formData.fullname,
+        email: formData.email,
+        phone: formData.phone,
+        teamName: formData.teamName,
       },
     });
   };
