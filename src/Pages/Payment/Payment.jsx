@@ -5,7 +5,7 @@ import Layout from "../../Components/Layout/Layout";
 export default function Payment() {
   const show = useLocation();
 
-  const { date, time } = show.state || {};
+  const { date, time, name } = show.state || {};
   return (
     <>
       <Layout>
@@ -23,7 +23,7 @@ export default function Payment() {
             <tbody className="table-group-divider">
               <tr>
                 <th scope="row">1</th>
-                <td>Mark</td>
+                <td>{name}</td>
                 <td>09155042678</td>
                 <td>@mdo</td>
               </tr>

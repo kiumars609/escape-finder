@@ -66,6 +66,7 @@ export default function Booking() {
       state: {
         date: selectedDate,
         time: selectedSlot,
+        name: formData.fullname
       },
     });
   };
@@ -88,6 +89,8 @@ export default function Booking() {
           selectedSlots={selectedSlots}
           currentDate={currentDate}
           handleSubmit={handleSubmit}
+          handleChange={handleChange}
+          formData={formData}
         />
       </div>
     </section>

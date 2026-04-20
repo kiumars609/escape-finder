@@ -7,6 +7,8 @@ export default function BookingPanel({
   selectedSlots,
   currentDate,
   handleSubmit,
+  handleChange,
+  formData,
 }) {
   const selectedMonth = currentDate.toLocaleString("en-US", {
     month: "long",
@@ -60,8 +62,11 @@ export default function BookingPanel({
           <div className="form-group">
             <label htmlFor="fullname">Full Name</label>
             <input
+              name="fullname"
               type="text"
               id="fullname"
+              value={formData.fullname}
+              onChange={handleChange}
               placeholder="Enter your full name"
             />
           </div>
