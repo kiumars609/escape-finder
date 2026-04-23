@@ -34,14 +34,12 @@ export default function Payment() {
           </table>
         </section>
 
-        <div className="container bg-warning">
+        <div className="container payment-info">
           <div className="row">
-            <div className="col-md-8 col-10 bg-danger">test</div>
-            <div className="col-md-4 col-2 bg-primary">test</div>
+            <div className="col-md-8 col-10 user-info">test</div>
+            <div className="col-md-4 col-2 room-info">test</div>
           </div>
         </div>
-
-
       </Layout>
     </>
   );
