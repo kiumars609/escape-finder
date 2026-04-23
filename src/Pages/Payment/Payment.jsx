@@ -173,16 +173,18 @@ export default function Payment() {
                 <div className="summary-card">
                   <h5>Mystery Of The Lab</h5>
 
-                  <p>Date: 31 May</p>
+                  <p>Date: {date}</p>
 
-                  <p>Time: 18:00</p>
+                  <p>Time: {time}</p>
 
                   <p>Players: 4</p>
+
+                  <p>Team Name: {teamName}</p>
                 </div>
 
                 <div className="price-row">
                   <span>Base Price</span>
-                  <span>$50</span>
+                  <span>${price}</span>
                 </div>
 
                 <div className="price-row">
@@ -192,7 +194,7 @@ export default function Payment() {
 
                 <div className="total-row">
                   <span>Total</span>
-                  <span>$50</span>
+                  <span>${price}</span>
                 </div>
               </div>
             </div>
