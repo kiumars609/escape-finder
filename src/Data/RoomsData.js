@@ -14,6 +14,7 @@ const roomsData = [
     difficulty: 5,
     time: 60,
     city: "mashhad",
+    price: 50,
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ const roomsData = [
     difficulty: 2,
     time: 90,
     city: "yerevan",
+    price: 70,
   },
   {
     id: 3,
@@ -34,6 +36,7 @@ const roomsData = [
     difficulty: 3,
     time: 120,
     city: "mashhad",
+    price: 40,
   },
   {
     id: 4,
@@ -44,6 +47,7 @@ const roomsData = [
     difficulty: 5,
     time: 80,
     city: "tehran",
+    price: 80,
   },
   {
     id: 5,
@@ -54,6 +58,7 @@ const roomsData = [
     difficulty: 5,
     time: 120,
     city: "mashhad",
+    price: 100,
   },
 ];
 

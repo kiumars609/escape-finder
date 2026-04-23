@@ -15,7 +15,7 @@ export default function Room() {
       <Layout>
         <main>
           <Details room={room} />
-          <Booking />
+          <Booking roomDetail={room} />
 
           <section className="info-strip">
             <div className="container info-strip-inner">

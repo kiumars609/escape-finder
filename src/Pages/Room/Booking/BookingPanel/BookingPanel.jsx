@@ -9,6 +9,7 @@ export default function BookingPanel({
   handleSubmit,
   handleChange,
   formData,
+  roomDetail,
 }) {
   const selectedMonth = currentDate.toLocaleString("en-US", {
     month: "long",
@@ -47,7 +48,7 @@ export default function BookingPanel({
       <div className="price-box">
         <div>
           <span className="price-label">Price</span>
-          <strong>$420</strong>
+          <strong>${roomDetail.price}</strong>
         </div>
 
         <p>

@@ -3,7 +3,7 @@ import Calendar from "./Calendar/Calendar";
 import BookingPanel from "./BookingPanel/BookingPanel";
 import { useNavigate } from "react-router-dom";
 
-export default function Booking() {
+export default function Booking({ roomDetail }) {
   const [currentDate, setCurrentDate] = useState(new Date(2026, 2, 1));
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedSlot, setSelectedSlot] = useState(null);
@@ -15,15 +15,6 @@ export default function Booking() {
   });
 
   const navigate = useNavigate();
-
-  const handleChange = (e) => {
-    const { name, type, value, checked } = e.target;
-
-    setFormData((prev) => ({
-      ...prev,
-      [name]: type === "checkbox" ? checked : value,
-    }));
-  };
 
   const slotsByDate = {
     "2026-03-22": ["12:00", "14:30", "17:00"],
@@ -57,6 +48,15 @@ export default function Booking() {
   const selectedSlots = selectedDateString
     ? slotsByDate[selectedDateString] || []
     : [];
+
+  const handleChange = (e) => {
+    const { name, type, value, checked } = e.target;
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -98,6 +98,7 @@ export default function Booking() {
           handleSubmit={handleSubmit}
           handleChange={handleChange}
           formData={formData}
+          roomDetail={roomDetail}
         />
       </div>
     </section>
