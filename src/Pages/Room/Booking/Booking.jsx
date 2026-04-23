@@ -74,6 +74,7 @@ export default function Booking({ roomDetail }) {
         email: formData.email,
         phone: formData.phone,
         teamName: formData.teamName,
+        price: roomDetail.price,
       },
     });
   };

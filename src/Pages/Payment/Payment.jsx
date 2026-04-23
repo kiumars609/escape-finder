@@ -5,12 +5,13 @@ import Layout from "../../Components/Layout/Layout";
 export default function Payment() {
   const show = useLocation();
 
-  const { date, time, name, phone, email, teamName } = show.state || {};
+  const { date, time, name, phone, email, teamName, price } = show.state || {};
   return (
     <>
       <Layout>
         <section className="col-md-6 my-5 col-11 mx-auto">
           <h2>Booked Date: {date + " - " + time}</h2>
+          <h3>Price: ${price}</h3>
           <table className="table">
             <thead>
               <tr>
@@ -32,6 +33,15 @@ export default function Payment() {
             </tbody>
           </table>
         </section>
+
+        <div className="container bg-warning">
+          <div className="row">
+            <div className="col-md-8 col-10 bg-danger">test</div>
+            <div className="col-md-4 col-2 bg-primary">test</div>
+          </div>
+        </div>
+
+
       </Layout>
     </>
   );
