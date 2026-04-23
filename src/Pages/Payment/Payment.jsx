@@ -35,9 +35,14 @@ export default function Payment() {
         </section>
 
         <div className="container payment-info">
-          <div className="row">
-            <div className="col-md-8 col-10 user-info">test</div>
-            <div className="col-md-4 col-2 room-info">test</div>
+          <div className="row g-4">
+            <div className="col-md-8 col-12">
+              <div className="user-info">test</div>
+            </div>
+
+            <div className="col-md-4 col-12">
+              <div className="room-info">test</div>
+            </div>
           </div>
         </div>
       </Layout>

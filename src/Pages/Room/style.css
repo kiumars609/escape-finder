@@ -569,16 +569,13 @@ textarea {
 }
 
 /* Payment */
-.payment-info .user-info {
-  background-color: #121733;
-  border-radius: 5px;
-  border: solid 1px #232948;
-  margin-bottom: 200px;
-}
-
+/* Payment */
+.payment-info .user-info,
 .payment-info .room-info {
   background-color: #121733;
   border-radius: 5px;
   border: solid 1px #232948;
   margin-bottom: 200px;
+  padding: 20px;
+  min-height: 300px;
 }
