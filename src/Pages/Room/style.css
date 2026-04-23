@@ -568,18 +568,188 @@ textarea {
   margin-top: 6px;
 }
 
-/* Payment */
-/* Payment */
-.payment-info .user-info,
-.payment-info .room-info {
-  background-color: #121733;
-  border-radius: 5px;
-  border: solid 1px #232948;
-  margin-bottom: 200px;
-  padding: 20px;
-  min-height: 300px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.payment-page{
+margin-top:60px;
+margin-bottom:80px;
 }
 
-.payment-info .user-info .sub-title{
-  font-size: 0.85rem;
+.payment-box,
+.summary-box{
+background:#121733;
+border:1px solid #232948;
+border-radius:18px;
+padding:35px;
+}
+
+.payment-box h2{
+color:white;
+font-weight:700;
+margin-bottom:8px;
+}
+
+.payment-subtitle{
+color:#aab3d6;
+margin-bottom:30px;
+}
+
+
+/* Payment methods */
+
+.payment-methods{
+display:flex;
+gap:20px;
+margin-bottom:30px;
+}
+
+.method-card{
+flex:1;
+padding:16px;
+border:1px solid #2e3767;
+border-radius:12px;
+color:white;
+cursor:pointer;
+}
+
+.method-card input{
+margin-right:10px;
+}
+
+.method-card.active{
+border:1px solid #5a7dff;
+background:rgba(90,125,255,.08);
+}
+
+
+
+/* Inputs */
+
+label{
+display:block;
+color:#cdd5ff;
+margin-bottom:8px;
+font-size:14px;
+}
+
+.custom-input{
+background:#0e1430 !important;
+border:1px solid #28315d !important;
+color:white !important;
+padding:14px;
+border-radius:10px;
+}
+
+.custom-input::placeholder{
+color:#7884bd;
+}
+
+.custom-input:focus{
+box-shadow:none !important;
+border-color:#5a7dff !important;
+background:#0e1430 !important;
+}
+
+hr{
+border-color:#273056;
+margin:35px 0;
+}
+
+.billing-title{
+color:white;
+margin-bottom:20px;
+}
+
+
+/* Buttons */
+
+.payment-actions{
+margin-top:35px;
+display:flex;
+justify-content:space-between;
+}
+
+.back-btn{
+background:transparent;
+border:none;
+color:#8ba0ff;
+font-weight:600;
+}
+
+.pay-btn{
+background:linear-gradient(
+90deg,
+#5865ff,
+#55c4ff
+);
+
+border:none;
+padding:14px 35px;
+border-radius:12px;
+font-weight:700;
+color:white;
+}
+
+
+/* Summary */
+
+.summary-box h3{
+color:white;
+margin-bottom:25px;
+}
+
+.summary-card{
+padding-bottom:25px;
+border-bottom:1px solid #28315d;
+margin-bottom:25px;
+}
+
+.summary-card h5{
+color:white;
+}
+
+.summary-card p{
+color:#aab3d6;
+margin-bottom:6px;
+}
+
+.price-row,
+.total-row{
+display:flex;
+justify-content:space-between;
+margin-bottom:18px;
+color:#cfd6ff;
+}
+
+.total-row{
+font-size:24px;
+font-weight:700;
+color:#5ebdff;
+margin-top:30px;
 }
