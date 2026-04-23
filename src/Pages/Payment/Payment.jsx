@@ -35,213 +35,169 @@ export default function Payment() {
         </section>
 
         <section className="container payment-page">
+          <div className="row g-4">
+            {/* Left Side */}
+            <div className="col-lg-8">
+              <div className="payment-box">
+                <h3>Payment Details</h3>
+                <p className="payment-subtitle">
+                  Complete your booking by providing payment information.
+                </p>
 
-  <div className="row g-4">
+                {/* Payment Methods */}
+                <div className="payment-methods">
+                  <label className="method-card active">
+                    <input type="radio" name="method" />
+                    Card
+                  </label>
 
-    {/* Left Side */}
-    <div className="col-lg-8">
-      <div className="payment-box">
+                  <label className="method-card">
+                    <input type="radio" name="method" />
+                    Other Method
+                  </label>
+                </div>
 
-        <h2>Payment Details</h2>
-        <p className="payment-subtitle">
-          Complete your booking by providing payment information.
-        </p>
+                {/* Card Number */}
+                <div className="mb-4">
+                  <label>Card Number</label>
 
-        {/* Payment Methods */}
-        <div className="payment-methods">
+                  <input
+                    type="text"
+                    className="form-control custom-input"
+                    placeholder="1234 5678 9012 3456"
+                  />
+                </div>
 
-          <label className="method-card active">
-            <input type="radio" name="method" />
-            Card
-          </label>
+                {/* Row */}
+                <div className="row g-3 mb-4">
+                  <div className="col-md-6">
+                    <label>Cardholder Name</label>
 
-          <label className="method-card">
-            <input type="radio" name="method" />
-            Other Method
-          </label>
+                    <input
+                      type="text"
+                      className="form-control custom-input"
+                      placeholder="Name on card"
+                    />
+                  </div>
 
-        </div>
+                  <div className="col-md-3">
+                    <label>Expiry</label>
 
+                    <input
+                      type="text"
+                      className="form-control custom-input"
+                      placeholder="MM/YY"
+                    />
+                  </div>
 
-        {/* Card Number */}
-        <div className="mb-4">
-          <label>Card Number</label>
+                  <div className="col-md-3">
+                    <label>CVV</label>
 
-          <input
-            type="text"
-            className="form-control custom-input"
-            placeholder="1234 5678 9012 3456"
-          />
-        </div>
+                    <input
+                      type="text"
+                      className="form-control custom-input"
+                      placeholder="123"
+                    />
+                  </div>
+                </div>
 
+                <hr />
 
-        {/* Row */}
-        <div className="row g-3 mb-4">
+                <h4 className="billing-title">Billing Information</h4>
 
-          <div className="col-md-6">
-            <label>Cardholder Name</label>
+                <div className="row g-3">
+                  <div className="col-md-6">
+                    <label>Email</label>
 
-            <input
-              type="text"
-              className="form-control custom-input"
-              placeholder="Name on card"
-            />
+                    <input
+                      type="email"
+                      className="form-control custom-input"
+                      placeholder="example@gmail.com"
+                    />
+                  </div>
+
+                  <div className="col-md-6">
+                    <label>Phone</label>
+
+                    <input
+                      type="text"
+                      className="form-control custom-input"
+                      placeholder="+374 ..."
+                    />
+                  </div>
+
+                  <div className="col-md-4">
+                    <label>City</label>
+
+                    <input
+                      type="text"
+                      className="form-control custom-input"
+                      placeholder="Yerevan"
+                    />
+                  </div>
+
+                  <div className="col-md-5">
+                    <label>Address</label>
+
+                    <input
+                      type="text"
+                      className="form-control custom-input"
+                      placeholder="Street, Building"
+                    />
+                  </div>
+
+                  <div className="col-md-3">
+                    <label>Postal</label>
+
+                    <input
+                      type="text"
+                      className="form-control custom-input"
+                      placeholder="0000"
+                    />
+                  </div>
+                </div>
+
+                <div className="payment-actions">
+                  <button className="back-btn">Back</button>
+
+                  <button className="pay-btn">Pay $50</button>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side */}
+            <div className="col-lg-4">
+              <div className="summary-box">
+                <h3>Order Summary</h3>
+
+                <div className="summary-card">
+                  <h5>Mystery Of The Lab</h5>
+
+                  <p>Date: 31 May</p>
+
+                  <p>Time: 18:00</p>
+
+                  <p>Players: 4</p>
+                </div>
+
+                <div className="price-row">
+                  <span>Base Price</span>
+                  <span>$50</span>
+                </div>
+
+                <div className="price-row">
+                  <span>Discount</span>
+                  <span>$0</span>
+                </div>
+
+                <div className="total-row">
+                  <span>Total</span>
+                  <span>$50</span>
+                </div>
+              </div>
+            </div>
           </div>
-
-
-          <div className="col-md-3">
-            <label>Expiry</label>
-
-            <input
-              type="text"
-              className="form-control custom-input"
-              placeholder="MM/YY"
-            />
-          </div>
-
-
-          <div className="col-md-3">
-            <label>CVV</label>
-
-            <input
-              type="text"
-              className="form-control custom-input"
-              placeholder="123"
-            />
-          </div>
-
-        </div>
-
-
-
-        <hr />
-
-
-        <h4 className="billing-title">
-          Billing Information
-        </h4>
-
-
-        <div className="row g-3">
-
-          <div className="col-md-6">
-            <label>Email</label>
-
-            <input
-              type="email"
-              className="form-control custom-input"
-              placeholder="example@gmail.com"
-            />
-          </div>
-
-
-          <div className="col-md-6">
-            <label>Phone</label>
-
-            <input
-              type="text"
-              className="form-control custom-input"
-              placeholder="+374 ..."
-            />
-          </div>
-
-
-          <div className="col-md-4">
-            <label>City</label>
-
-            <input
-              type="text"
-              className="form-control custom-input"
-              placeholder="Yerevan"
-            />
-          </div>
-
-
-          <div className="col-md-5">
-            <label>Address</label>
-
-            <input
-              type="text"
-              className="form-control custom-input"
-              placeholder="Street, Building"
-            />
-          </div>
-
-
-          <div className="col-md-3">
-            <label>Postal</label>
-
-            <input
-              type="text"
-              className="form-control custom-input"
-              placeholder="0000"
-            />
-          </div>
-
-        </div>
-
-
-
-        <div className="payment-actions">
-
-          <button className="back-btn">
-            Back
-          </button>
-
-          <button className="pay-btn">
-            Pay $50
-          </button>
-
-        </div>
-
-      </div>
-    </div>
-
-
-
-    {/* Right Side */}
-    <div className="col-lg-4">
-
-      <div className="summary-box">
-
-        <h3>Order Summary</h3>
-
-        <div className="summary-card">
-
-          <h5>Mystery Of The Lab</h5>
-
-          <p>Date: 31 May</p>
-
-          <p>Time: 18:00</p>
-
-          <p>Players: 4</p>
-
-        </div>
-
-
-        <div className="price-row">
-          <span>Base Price</span>
-          <span>$50</span>
-        </div>
-
-        <div className="price-row">
-          <span>Discount</span>
-          <span>$0</span>
-        </div>
-
-
-        <div className="total-row">
-          <span>Total</span>
-          <span>$50</span>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
+        </section>
       </Layout>
     </>
   );
