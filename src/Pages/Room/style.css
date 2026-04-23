@@ -704,6 +704,21 @@ hr {
   margin-bottom: 6px;
 }
 
+.user-info {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #28315d;
+  margin-bottom: 25px;
+}
+
+.user-info h5 {
+  color: white;
+}
+
+.user-info p {
+  color: #aab3d6;
+  margin-bottom: 6px;
+}
+
 .price-row,
 .total-row {
   display: flex;
