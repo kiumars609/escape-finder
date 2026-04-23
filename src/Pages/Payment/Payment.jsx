@@ -135,7 +135,7 @@ export default function Payment() {
                 <div className="payment-actions">
                   <button className="back-btn">Back</button>
 
-                  <button className="pay-btn">Pay $50</button>
+                  <button className="pay-btn">Pay ${price}</button>
                 </div>
               </div>
             </div>
@@ -148,38 +148,58 @@ export default function Payment() {
                 <div className="summary-card">
                   <h5>Mystery Of The Lab</h5>
 
-                  <p>Date: {date}</p>
+                  <p>
+                    Date: <span className="text-light">{date}</span>
+                  </p>
 
-                  <p>Time: {time}</p>
+                  <p>
+                    Time: <span className="text-light">{time}</span>
+                  </p>
 
-                  <p>Players: 4</p>
+                  <p>
+                    Players: <span className="text-light">4</span>
+                  </p>
                 </div>
 
                 <div className="user-info">
                   <h5>User Information</h5>
 
-                  <p>Name: {name}</p>
+                  <p>
+                    Name: <span className="text-light">{name}</span>
+                  </p>
 
-                  <p>Phone Number: {phone}</p>
+                  <p>
+                    Phone Number: <span className="text-light">{phone}</span>
+                  </p>
 
-                  <p>Email: {email}</p>
+                  <p>
+                    Email: <span className="text-light">{email}</span>
+                  </p>
 
-                  <p>Team Name: {teamName}</p>
+                  <p>
+                    Team Name: <span className="text-light">{teamName}</span>
+                  </p>
                 </div>
 
                 <div className="price-row">
                   <span>Base Price</span>
-                  <span>${price}</span>
+                  <span>
+                    $<span className="text-light">{price}</span>
+                  </span>
                 </div>
 
                 <div className="price-row">
                   <span>Discount</span>
-                  <span>$0</span>
+                  <span>
+                    $<span className="text-light">0</span>
+                  </span>
                 </div>
 
                 <div className="total-row">
                   <span>Total</span>
-                  <span>${price}</span>
+                  <span>
+                    <span className="text-light">${price}</span>
+                  </span>
                 </div>
               </div>
             </div>
