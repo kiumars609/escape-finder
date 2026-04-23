@@ -579,3 +579,7 @@ textarea {
   padding: 20px;
   min-height: 300px;
 }
+
+.payment-info .user-info .sub-title{
+  font-size: 0.85rem;
+}

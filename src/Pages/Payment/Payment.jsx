@@ -37,7 +37,10 @@ export default function Payment() {
         <div className="container payment-info">
           <div className="row g-4">
             <div className="col-md-8 col-12">
-              <div className="user-info">test</div>
+              <div className="user-info">
+                <h3>Payment Details</h3>
+                <p className="sub-title">Complete your booking by providing your payment information.</p>
+              </div>
             </div>
 
             <div className="col-md-4 col-12">
