@@ -720,6 +720,6 @@ hr {
 }
 
 .custom-input::placeholder {
-  color: #cdd5ff;
-  opacity: 1;
+  color: #cdd5ff!important;
+  opacity: 1!important;
 }
