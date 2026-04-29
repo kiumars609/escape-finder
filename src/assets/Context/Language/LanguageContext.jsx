@@ -6,6 +6,8 @@ export function LanguageProvider({ children }) {
   const [language, setLanguage] = useState("De");
 
   return (
-    <GermanLanguageContext value={language}>{children}</GermanLanguageContext>
+    <GermanLanguageContext.Provider value={language}>
+      {children}
+    </GermanLanguageContext.Provider>
   );
 }
