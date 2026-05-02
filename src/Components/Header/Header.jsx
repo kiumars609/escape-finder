@@ -9,6 +9,7 @@ import { useBooking } from "../../assets/Context/Booking/useBooking";
 export default function Header() {
   const { theme } = useContext(WhiteThemeContext);
   const { language } = useContext(GermanLanguageContext);
+  // const { state } = useContext(BookingContext);
   const { state } = useBooking();
   return (
     <>
