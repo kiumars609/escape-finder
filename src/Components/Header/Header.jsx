@@ -4,9 +4,11 @@ import logo from "../../assets/images/logo/logo.png";
 import { Link } from "react-router-dom";
 import { WhiteThemeContext } from "../../assets/Context/Theme/ThemeContext";
 import { GermanLanguageContext } from "../../assets/Context/Language/LanguageContext";
+import { BookingContext } from "../../assets/Context/Booking/BookingContext";
 export default function Header() {
   const { theme } = useContext(WhiteThemeContext);
   const { language } = useContext(GermanLanguageContext);
+  const { state } = useContext(BookingContext);
   return (
     <>
       <header className="col-12">
@@ -51,6 +53,12 @@ export default function Header() {
                       <li className="nav-item mx-3">
                         <a className="nav-link fs-5" href="#">
                           Language: {language}
+                        </a>
+                      </li>
+
+                      <li className="nav-item mx-3">
+                        <a className="nav-link fs-5" href="#">
+                          Bag: {state.bookings.length}
                         </a>
                       </li>
                     </ul>
