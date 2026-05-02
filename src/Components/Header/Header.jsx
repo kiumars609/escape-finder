@@ -5,10 +5,11 @@ import { Link } from "react-router-dom";
 import { WhiteThemeContext } from "../../assets/Context/Theme/ThemeContext";
 import { GermanLanguageContext } from "../../assets/Context/Language/LanguageContext";
 import { BookingContext } from "../../assets/Context/Booking/BookingContext";
+import { useBooking } from "../../assets/Context/Booking/useBooking";
 export default function Header() {
   const { theme } = useContext(WhiteThemeContext);
   const { language } = useContext(GermanLanguageContext);
-  const { state } = useContext(BookingContext);
+  const { state } = useBooking();
   return (
     <>
       <header className="col-12">

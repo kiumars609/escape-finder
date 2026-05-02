@@ -1,7 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { BookingContext } from './BookingContext'
 
-export default function useBooking() {
-  return (
-    <div>useBooking</div>
-  )
+export function useBooking() {
+  return useContext(BookingContext);
 }
