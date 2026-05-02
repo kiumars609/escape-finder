@@ -1,8 +1,9 @@
 import React, { createContext } from "react";
+import { useReducer } from "react";
 
 export const BookingContext = createContext();
 
-const initialState = {
+const initailState = {
   bookings: [],
 };
 
@@ -11,7 +12,7 @@ function bookingReducer(state, action) {
     case "ADD_BOOKING":
       return {
         ...state,
-        bookings: [...state.bookings, action.payload],
+        bookings: [...state, action.payload],
       };
 
     case "REMOVE_BOOKING":
@@ -32,7 +33,7 @@ function bookingReducer(state, action) {
 }
 
 export function BookingProvider({ children }) {
-  const [state, dispatch] = useReducer(bookingReducer, initialState);
+  const [state, dispatch] = useReducer(bookingReducer, initailState);
 
   <BookingContext.Provider value={{ state, dispatch }}>
     {children}
