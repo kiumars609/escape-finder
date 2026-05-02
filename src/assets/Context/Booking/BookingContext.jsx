@@ -30,3 +30,11 @@ function bookingReducer(state, action) {
       break;
   }
 }
+
+export function BookingProvider({ children }) {
+  const [state, dispatch] = useReducer(bookingReducer, initialState);
+
+  <BookingContext.Provider value={{ state, dispatch }}>
+    {children}
+  </BookingContext.Provider>;
+}
